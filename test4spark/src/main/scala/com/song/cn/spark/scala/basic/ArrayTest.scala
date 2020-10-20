@@ -1,6 +1,8 @@
 package com.song.cn.spark.scala.basic
 
+import scala.collection.{JavaConverters, mutable}
 import scala.collection.mutable.ArrayBuffer
+import scala.collection.JavaConversions
 
 object ArrayTest {
 
@@ -30,13 +32,19 @@ object ArrayTest {
     // Scala数组转Java的List
     var arr = ArrayBuffer("1","2","3")
 
-    import scala.collection.JavaConversions.bufferAsJavaList
+    // TODO: 此种办法有问题，跑不通
+/*    import scala.collection.JavaConversions.bufferAsJavaList
     var javaArr = new ProcessBuilder(arr)
-    var arrList = javaArr.command()
+    var arrList = javaArr.command()*/
 
-    println(arrList)
+    // Scala 转 Java
+    val javaList: java.util.List[String] = JavaConversions.bufferAsJavaList(arr)
 
-
+    // Java 转 Scala
+    val scalaBuffer: mutable.Buffer[String] = JavaConversions.asScalaBuffer(javaList)
+    for( elem <- scalaBuffer){
+      println(elem)
+    }
 
   }
 
