@@ -7,7 +7,7 @@ import org.apache.spark.sql.SparkSession
 object ChiSqSelector {
 
   def main(args: Array[String]): Unit = {
-    System.setProperty("hadoop.home.dir", "D:\\sljoai\\java\\src\\test\\hadoop-common\\hadoop-common-2.6.0-bin")
+    // System.setProperty("hadoop.home.dir", "D:\\sljoai\\java\\src\\test\\hadoop-common\\hadoop-common-2.6.0-bin")
     val spark = SparkSession
       .builder()
       .master("local[2]")
