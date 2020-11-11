@@ -1,19 +1,23 @@
 package com.song.cn.spark.scala.mllib
 
-import org.apache.spark.ml.Pipeline
+import org.apache.spark.ml.{Pipeline, PipelineModel}
 import org.apache.spark.ml.classification.{RandomForestClassificationModel, RandomForestClassifier}
 import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator
 import org.apache.spark.ml.feature.{IndexToString, StringIndexer, VectorAssembler}
+import org.apache.spark.ml.tuning.{CrossValidator, ParamGridBuilder}
 import org.apache.spark.sql.types.{DoubleType, StructField, StructType}
 import org.apache.spark.sql.{Row, SparkSession}
 
 import scala.collection.mutable
 
-object RandomForestBodyDetection {
+/**
+ * 超参数及交叉验证相结合使用
+ */
+object RandomForestBodyDetectionWithParamGrid {
   def main(args: Array[String]): Unit = {
     val spark = SparkSession
       .builder()
-      .appName("RandomForestBodyDetection")
+      .appName("RandomForestBodyDetectionWithParamGrid")
       .master("local[2]")
       .enableHiveSupport()
       .getOrCreate()
@@ -28,7 +32,6 @@ object RandomForestBodyDetection {
       }
       Row.fromSeq(list.map(v => if (v.toString.toUpperCase == "NAN") Double.NaN else v.toString.toDouble))
     })
-
     val schema = StructType(Array(
       StructField("timestamp", DoubleType), StructField("activityId", DoubleType), StructField("hr", DoubleType),
       StructField("hand_temp", DoubleType), StructField("hand_accel1X", DoubleType), StructField("hand_accel1Y", DoubleType),
@@ -67,9 +70,7 @@ object RandomForestBodyDetection {
     val columnNames = allColumnNames.filter {
       !inputColNames.contains(_)
     }
-
     // 滤掉不需要的列，并填充缺失值
-    // 代码有问题：requirement failed: Param null__inputCol does not belong to MissingValueTransformer_88c304947c76
     val typeTransformer = new FillMissingValueTransformer().setInputCols(inputColNames)
     // 构造标签列
     val labelIndexer = new StringIndexer()
@@ -90,33 +91,49 @@ object RandomForestBodyDetection {
       .setMaxDepth(30)
       .setImpurity("entropy")
       .setCacheNodeIds(true)
-    val labelConverter = new IndexToString()
+    /*val labelConverter = new IndexToString()
       .setInputCol("prediction")
       .setOutputCol("predictedLabel")
-      .setLabels(labelIndexer.labels)
-    val Array(trainingData, testData) = df.randomSplit(Array(0.8, 0.2))
+      .setLabels(labelIndexer.labels)*/
+    //val Array(trainingData, testData) = df.randomSplit(Array(0.8, 0.2))
+    val data = df.distinct()
     // 构建整个Pipeline
     val pipeline = new Pipeline().setStages(
       Array(typeTransformer,
         labelIndexer,
         vectorAssembler,
-        rfClassifier,
-        labelConverter))
-    val model = pipeline.fit(trainingData)
-    val predictionResultDF = model.transform(testData)
-    // 展示结果
-    predictionResultDF.select(
-      "hr", "hand_temp", "hand_accel1X", "hand_accel1Y", "hand_accel1Z", "hand_accel2X", "hand_accel2Y", "hand_accel2Z", "hand_gyroX", "hand_gyroY", "hand_gyroZ", "hand_magnetX", "hand_magnetY", "hand_magnetZ", "chest_temp", "chest_accel1X", "chest_accel1Y", "chest_accel1Z", "chest_accel2X", "chest_accel2Y", "chest_accel2Z", "chest_gyroX", "chest_gyroY", "chest_gyroZ", "chest_magnetX", "chest_magnetY", "chest_magnetZ", "ankle_temp", "ankle_accel1X", "ankle_accel1Y", "ankle_accel1Z", "ankle_accel2X", "ankle_accel2Y", "ankle_accel2Z", "ankle_gyroX", "ankle_gyroY", "ankle_gyroZ", "ankle_magnetX", "ankle_magnetY", "ankle_magnetZ", "indexedLabel", "predictedLabel")
-      .show(20)
+        rfClassifier))
+    // 构造超参数
+    val paramGrid = new ParamGridBuilder()
+      .addGrid(rfClassifier.numTrees,3 ::5 :: 10 :: Nil)
+      .addGrid(rfClassifier.featureSubsetStrategy,"auto" :: "all" :: Nil)
+      .addGrid(rfClassifier.impurity,"gini" :: "entropy" :: Nil)
+      .addGrid(rfClassifier.maxBins,2 :: 5 :: Nil)
+      .addGrid(rfClassifier.maxDepth, 3 :: 5 :: Nil)
+      .build()
+    // 评估器
     val evaluator = new MulticlassClassificationEvaluator()
       .setLabelCol("indexedLabel")
       .setPredictionCol("prediction")
       .setMetricName("accuracy")
-    val predictionAccuracy = evaluator.evaluate(predictionResultDF)
-    // 模型性能
-    println("Testing Error = " + (1.0 - predictionAccuracy))
-    // TODO: 执行会有些问题
-    val randomForestModel = model.stages(2).asInstanceOf[RandomForestClassificationModel]
-    println("Trained Random Forest Model is:\n" + randomForestModel.toDebugString)
+    // 交叉验证器
+    val crossValidator = new CrossValidator()
+      .setEstimator(pipeline)
+      .setEstimatorParamMaps(paramGrid)
+      .setNumFolds(5)
+      .setEvaluator(evaluator)
+    val crossValidatorModel = crossValidator.fit(data)
+    // 得到最好的模型
+    val bestModel = crossValidatorModel.bestModel
+    val bestPipelineModel = crossValidatorModel.bestModel.asInstanceOf[PipelineModel]
+    val stages = bestPipelineModel.stages
+    // 得到最佳的模型超参数
+    val rfClassifierStage = stages(stages.length-1).asInstanceOf[RandomForestClassificationModel]
+    val numTress = rfClassifierStage.getNumTrees
+    val featureSubsetStrategy = rfClassifierStage.getFeatureSubsetStrategy
+    val impurity = rfClassifierStage.getImpurity
+    val maxBins = rfClassifierStage.getMaxBins
+    val maxDepth = rfClassifierStage.getMaxDepth
+    println(s"numTress: $numTress, featureSubsetStrategy: $featureSubsetStrategy, impurity: $impurity, maxBins: $maxBins, maxDepth: $maxDepth ")
   }
 }
