@@ -7,10 +7,11 @@ import java.net.ServerSocket;
 
 public class MyTest3 {
 
-    public void test(){
+    public void test() throws IOException{
         try {
             FileInputStream inputStream = new FileInputStream("test.txt");
             ServerSocket serverSocket = new ServerSocket(9099);
+            serverSocket.accept();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
