@@ -1,6 +1,10 @@
+```20201121```
+##
+- 添加 JVM 内存中元数据设置 Demo
+- 添加 Spark SQL 中 DataFrame / DataSet / RDD 之间相互转换的 Demo
 ```20201111```
 ##
-1.添加 Java 基础知识相关的 maven 工程 ( test4java) <br>
+- 添加 Java 基础知识相关的 maven 工程 ( test4java) <br>
 
 ```20201023```
 - 添加 PCA 和 KMeans 的 Demo
