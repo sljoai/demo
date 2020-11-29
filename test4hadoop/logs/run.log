@@ -1,0 +1,2173 @@
+2020-10-17 09:40:05  [ main:1 ] - [ ERROR ]  上传文件失败D:\Java\SRC\test\test4hadoop\input\test.nb (系统找不到指定的路径。)
+2020-10-17 09:40:06  [ main:180 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 09:40:06  [ main:453 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 09:40:06  [ main:471 ] - [ INFO ]  Cleaning up the staging area /tmp/hadoop-yarn/staging/95/.staging/job_1602894678591_0006
+2020-10-17 09:43:06  [ main:0 ] - [ ERROR ]  上传文件失败D:\Java\SRC\test\test4hadoop\input\test.nb (系统找不到指定的路径。)
+2020-10-17 09:43:06  [ main:220 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 09:43:07  [ main:485 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 09:43:08  [ main:2203 ] - [ INFO ]  Total input paths to process : 1
+2020-10-17 09:43:08  [ main:2266 ] - [ INFO ]  number of splits:1
+2020-10-17 09:43:08  [ main:2421 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0007
+2020-10-17 09:43:09  [ main:2590 ] - [ INFO ]  Submitted application application_1602894678591_0007
+2020-10-17 09:43:09  [ main:2618 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0007/
+2020-10-17 09:43:09  [ main:2618 ] - [ INFO ]  Running job: job_1602894678591_0007
+2020-10-17 09:43:15  [ main:8746 ] - [ INFO ]  Job job_1602894678591_0007 running in uber mode : false
+2020-10-17 09:43:15  [ main:8748 ] - [ INFO ]   map 0% reduce 0%
+2020-10-17 09:43:21  [ main:14863 ] - [ INFO ]   map 100% reduce 0%
+2020-10-17 09:43:24  [ main:17882 ] - [ INFO ]  Task Id : attempt_1602894678591_0007_r_000000_0, Status : FAILED
+2020-10-17 09:43:29  [ main:22921 ] - [ INFO ]   map 100% reduce 100%
+2020-10-17 09:43:29  [ main:22923 ] - [ INFO ]  Task Id : attempt_1602894678591_0007_r_000000_1, Status : FAILED
+2020-10-17 09:43:30  [ main:23932 ] - [ INFO ]   map 100% reduce 0%
+2020-10-17 09:43:33  [ main:26978 ] - [ INFO ]  Task Id : attempt_1602894678591_0007_r_000000_2, Status : FAILED
+2020-10-17 09:43:39  [ main:33016 ] - [ INFO ]   map 100% reduce 100%
+2020-10-17 09:43:39  [ main:33028 ] - [ INFO ]  Job job_1602894678591_0007 failed with state FAILED due to: Task failed task_1602894678591_0007_r_000000
+Job failed as tasks failed. failedMaps:0 failedReduces:1
+
+2020-10-17 09:43:39  [ main:33144 ] - [ INFO ]  Counters: 37
+	File System Counters
+		FILE: Number of bytes read=0
+		FILE: Number of bytes written=109387
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=193
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=3
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+	Job Counters 
+		Failed reduce tasks=4
+		Launched map tasks=1
+		Launched reduce tasks=4
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=3821
+		Total time spent by all reduces in occupied slots (ms)=8746
+		Total time spent by all map tasks (ms)=3821
+		Total time spent by all reduce tasks (ms)=8746
+		Total vcore-milliseconds taken by all map tasks=3821
+		Total vcore-milliseconds taken by all reduce tasks=8746
+		Total megabyte-milliseconds taken by all map tasks=3912704
+		Total megabyte-milliseconds taken by all reduce tasks=8955904
+	Map-Reduce Framework
+		Map input records=6
+		Map output records=6
+		Map output bytes=144
+		Map output materialized bytes=162
+		Input split bytes=117
+		Combine input records=0
+		Spilled Records=6
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=62
+		CPU time spent (ms)=1690
+		Physical memory (bytes) snapshot=166727680
+		Virtual memory (bytes) snapshot=320581632
+		Total committed heap usage (bytes)=121180160
+	File Input Format Counters 
+		Bytes Read=76
+2020-10-17 09:47:08  [ main:0 ] - [ ERROR ]  上传文件失败D:\Java\SRC\test\test4hadoop\input\test.nb (系统找不到指定的路径。)
+2020-10-17 09:47:08  [ main:181 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 09:47:09  [ main:459 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 09:47:10  [ main:1916 ] - [ INFO ]  Total input paths to process : 1
+2020-10-17 09:47:10  [ main:1985 ] - [ INFO ]  number of splits:1
+2020-10-17 09:47:10  [ main:2155 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0008
+2020-10-17 09:47:10  [ main:2308 ] - [ INFO ]  Submitted application application_1602894678591_0008
+2020-10-17 09:47:10  [ main:2332 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0008/
+2020-10-17 09:47:10  [ main:2332 ] - [ INFO ]  Running job: job_1602894678591_0008
+2020-10-17 09:47:17  [ main:8546 ] - [ INFO ]  Job job_1602894678591_0008 running in uber mode : false
+2020-10-17 09:47:17  [ main:8547 ] - [ INFO ]   map 0% reduce 0%
+2020-10-17 09:47:21  [ main:12594 ] - [ INFO ]   map 100% reduce 0%
+2020-10-17 09:47:25  [ main:16648 ] - [ INFO ]  Task Id : attempt_1602894678591_0008_r_000000_0, Status : FAILED
+2020-10-17 09:47:31  [ main:22688 ] - [ INFO ]  Task Id : attempt_1602894678591_0008_r_000000_1, Status : FAILED
+2020-10-17 09:47:35  [ main:26716 ] - [ INFO ]  Task Id : attempt_1602894678591_0008_r_000000_2, Status : FAILED
+2020-10-17 09:47:41  [ main:32754 ] - [ INFO ]   map 100% reduce 100%
+2020-10-17 09:47:41  [ main:32810 ] - [ INFO ]  Job job_1602894678591_0008 failed with state FAILED due to: Task failed task_1602894678591_0008_r_000000
+Job failed as tasks failed. failedMaps:0 failedReduces:1
+
+2020-10-17 09:47:41  [ main:33006 ] - [ INFO ]  Counters: 37
+	File System Counters
+		FILE: Number of bytes read=0
+		FILE: Number of bytes written=109387
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=193
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=3
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+	Job Counters 
+		Failed reduce tasks=4
+		Launched map tasks=1
+		Launched reduce tasks=4
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=1930
+		Total time spent by all reduces in occupied slots (ms)=9090
+		Total time spent by all map tasks (ms)=1930
+		Total time spent by all reduce tasks (ms)=9090
+		Total vcore-milliseconds taken by all map tasks=1930
+		Total vcore-milliseconds taken by all reduce tasks=9090
+		Total megabyte-milliseconds taken by all map tasks=1976320
+		Total megabyte-milliseconds taken by all reduce tasks=9308160
+	Map-Reduce Framework
+		Map input records=6
+		Map output records=6
+		Map output bytes=144
+		Map output materialized bytes=162
+		Input split bytes=117
+		Combine input records=0
+		Spilled Records=6
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=58
+		CPU time spent (ms)=250
+		Physical memory (bytes) snapshot=166748160
+		Virtual memory (bytes) snapshot=320581632
+		Total committed heap usage (bytes)=121180160
+	File Input Format Counters 
+		Bytes Read=76
+2020-10-17 09:52:10  [ main:0 ] - [ ERROR ]  上传文件失败D:\Java\SRC\test\test4hadoop\input\test.nb (系统找不到指定的路径。)
+2020-10-17 09:52:10  [ main:217 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 09:52:10  [ main:476 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 09:52:12  [ main:1946 ] - [ INFO ]  Total input paths to process : 1
+2020-10-17 09:52:12  [ main:2016 ] - [ INFO ]  number of splits:1
+2020-10-17 09:52:12  [ main:2177 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0012
+2020-10-17 09:52:12  [ main:2355 ] - [ INFO ]  Submitted application application_1602894678591_0012
+2020-10-17 09:52:12  [ main:2385 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0012/
+2020-10-17 09:52:12  [ main:2386 ] - [ INFO ]  Running job: job_1602894678591_0012
+2020-10-17 09:52:17  [ main:7499 ] - [ INFO ]  Job job_1602894678591_0012 running in uber mode : false
+2020-10-17 09:52:17  [ main:7501 ] - [ INFO ]   map 0% reduce 0%
+2020-10-17 09:52:22  [ main:12547 ] - [ INFO ]   map 100% reduce 0%
+2020-10-17 09:52:25  [ main:15566 ] - [ INFO ]  Task Id : attempt_1602894678591_0012_r_000000_0, Status : FAILED
+2020-10-17 09:52:29  [ main:19627 ] - [ INFO ]  Task Id : attempt_1602894678591_0012_r_000000_1, Status : FAILED
+2020-10-17 09:52:33  [ main:23675 ] - [ INFO ]  Task Id : attempt_1602894678591_0012_r_000000_2, Status : FAILED
+2020-10-17 09:52:39  [ main:29730 ] - [ INFO ]   map 100% reduce 100%
+2020-10-17 09:52:39  [ main:29742 ] - [ INFO ]  Job job_1602894678591_0012 failed with state FAILED due to: Task failed task_1602894678591_0012_r_000000
+Job failed as tasks failed. failedMaps:0 failedReduces:1
+
+2020-10-17 09:52:39  [ main:29850 ] - [ INFO ]  Counters: 37
+	File System Counters
+		FILE: Number of bytes read=0
+		FILE: Number of bytes written=109387
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=193
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=3
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+	Job Counters 
+		Failed reduce tasks=4
+		Launched map tasks=1
+		Launched reduce tasks=4
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=2489
+		Total time spent by all reduces in occupied slots (ms)=8020
+		Total time spent by all map tasks (ms)=2489
+		Total time spent by all reduce tasks (ms)=8020
+		Total vcore-milliseconds taken by all map tasks=2489
+		Total vcore-milliseconds taken by all reduce tasks=8020
+		Total megabyte-milliseconds taken by all map tasks=2548736
+		Total megabyte-milliseconds taken by all reduce tasks=8212480
+	Map-Reduce Framework
+		Map input records=6
+		Map output records=6
+		Map output bytes=144
+		Map output materialized bytes=162
+		Input split bytes=117
+		Combine input records=0
+		Spilled Records=6
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=61
+		CPU time spent (ms)=230
+		Physical memory (bytes) snapshot=166875136
+		Virtual memory (bytes) snapshot=320581632
+		Total committed heap usage (bytes)=121180160
+	File Input Format Counters 
+		Bytes Read=76
+2020-10-17 10:04:10  [ main:0 ] - [ ERROR ]  上传文件失败D:\Java\SRC\test\test4hadoop\input\test.nb (系统找不到指定的路径。)
+2020-10-17 10:04:10  [ main:195 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 10:04:10  [ main:500 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 10:04:12  [ main:1979 ] - [ INFO ]  Total input paths to process : 1
+2020-10-17 10:04:12  [ main:2045 ] - [ INFO ]  number of splits:1
+2020-10-17 10:04:12  [ main:2188 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0013
+2020-10-17 10:04:12  [ main:2341 ] - [ INFO ]  Submitted application application_1602894678591_0013
+2020-10-17 10:04:12  [ main:2368 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0013/
+2020-10-17 10:04:12  [ main:2369 ] - [ INFO ]  Running job: job_1602894678591_0013
+2020-10-17 10:04:18  [ main:7614 ] - [ INFO ]  Job job_1602894678591_0013 running in uber mode : false
+2020-10-17 10:04:18  [ main:7615 ] - [ INFO ]   map 0% reduce 0%
+2020-10-17 10:04:22  [ main:11697 ] - [ INFO ]   map 100% reduce 0%
+2020-10-17 10:04:27  [ main:16740 ] - [ INFO ]   map 100% reduce 100%
+2020-10-17 10:04:27  [ main:16754 ] - [ INFO ]  Job job_1602894678591_0013 completed successfully
+2020-10-17 10:04:27  [ main:16847 ] - [ INFO ]  Counters: 49
+	File System Counters
+		FILE: Number of bytes read=162
+		FILE: Number of bytes written=218719
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=193
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=6
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+	Job Counters 
+		Launched map tasks=1
+		Launched reduce tasks=1
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=2197
+		Total time spent by all reduces in occupied slots (ms)=2112
+		Total time spent by all map tasks (ms)=2197
+		Total time spent by all reduce tasks (ms)=2112
+		Total vcore-milliseconds taken by all map tasks=2197
+		Total vcore-milliseconds taken by all reduce tasks=2112
+		Total megabyte-milliseconds taken by all map tasks=2249728
+		Total megabyte-milliseconds taken by all reduce tasks=2162688
+	Map-Reduce Framework
+		Map input records=6
+		Map output records=6
+		Map output bytes=144
+		Map output materialized bytes=162
+		Input split bytes=117
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=6
+		Reduce shuffle bytes=162
+		Reduce input records=6
+		Reduce output records=0
+		Spilled Records=12
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=113
+		CPU time spent (ms)=700
+		Physical memory (bytes) snapshot=231632896
+		Virtual memory (bytes) snapshot=643309568
+		Total committed heap usage (bytes)=137498624
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=76
+	File Output Format Counters 
+		Bytes Written=0
+2020-10-17 10:08:57  [ main:0 ] - [ INFO ]  上传文件成功：test.nb
+2020-10-17 10:08:57  [ main:126 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 10:08:58  [ main:414 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 10:08:59  [ main:1829 ] - [ INFO ]  Total input paths to process : 1
+2020-10-17 10:08:59  [ main:1895 ] - [ INFO ]  number of splits:1
+2020-10-17 10:08:59  [ main:2045 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0014
+2020-10-17 10:08:59  [ main:2216 ] - [ INFO ]  Submitted application application_1602894678591_0014
+2020-10-17 10:08:59  [ main:2251 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0014/
+2020-10-17 10:08:59  [ main:2252 ] - [ INFO ]  Running job: job_1602894678591_0014
+2020-10-17 10:09:05  [ main:7369 ] - [ INFO ]  Job job_1602894678591_0014 running in uber mode : false
+2020-10-17 10:09:05  [ main:7371 ] - [ INFO ]   map 0% reduce 0%
+2020-10-17 10:09:09  [ main:11456 ] - [ INFO ]   map 100% reduce 0%
+2020-10-17 10:09:14  [ main:16520 ] - [ INFO ]   map 100% reduce 100%
+2020-10-17 10:09:14  [ main:16528 ] - [ INFO ]  Job job_1602894678591_0014 completed successfully
+2020-10-17 10:09:14  [ main:16634 ] - [ INFO ]  Counters: 49
+	File System Counters
+		FILE: Number of bytes read=162
+		FILE: Number of bytes written=218721
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=193
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=6
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+	Job Counters 
+		Launched map tasks=1
+		Launched reduce tasks=1
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=2011
+		Total time spent by all reduces in occupied slots (ms)=1992
+		Total time spent by all map tasks (ms)=2011
+		Total time spent by all reduce tasks (ms)=1992
+		Total vcore-milliseconds taken by all map tasks=2011
+		Total vcore-milliseconds taken by all reduce tasks=1992
+		Total megabyte-milliseconds taken by all map tasks=2059264
+		Total megabyte-milliseconds taken by all reduce tasks=2039808
+	Map-Reduce Framework
+		Map input records=6
+		Map output records=6
+		Map output bytes=144
+		Map output materialized bytes=162
+		Input split bytes=117
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=6
+		Reduce shuffle bytes=162
+		Reduce input records=6
+		Reduce output records=0
+		Spilled Records=12
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=111
+		CPU time spent (ms)=610
+		Physical memory (bytes) snapshot=231723008
+		Virtual memory (bytes) snapshot=643309568
+		Total committed heap usage (bytes)=137498624
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=76
+	File Output Format Counters 
+		Bytes Written=0
+2020-10-17 10:25:58  [ main:0 ] - [ INFO ]  上传文件成功：test.nb
+2020-10-17 10:25:58  [ main:119 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 10:25:59  [ main:394 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 10:26:00  [ main:1689 ] - [ INFO ]  Total input paths to process : 1
+2020-10-17 10:26:00  [ main:1739 ] - [ INFO ]  number of splits:1
+2020-10-17 10:26:00  [ main:1892 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0015
+2020-10-17 10:26:00  [ main:2057 ] - [ INFO ]  Submitted application application_1602894678591_0015
+2020-10-17 10:26:00  [ main:2096 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0015/
+2020-10-17 10:26:00  [ main:2097 ] - [ INFO ]  Running job: job_1602894678591_0015
+2020-10-17 10:26:06  [ main:7235 ] - [ INFO ]  Job job_1602894678591_0015 running in uber mode : false
+2020-10-17 10:26:06  [ main:7237 ] - [ INFO ]   map 0% reduce 0%
+2020-10-17 10:26:10  [ main:11277 ] - [ INFO ]   map 100% reduce 0%
+2020-10-17 10:26:15  [ main:16338 ] - [ INFO ]   map 100% reduce 100%
+2020-10-17 10:26:15  [ main:16346 ] - [ INFO ]  Job job_1602894678591_0015 completed successfully
+2020-10-17 10:26:15  [ main:16451 ] - [ INFO ]  Counters: 49
+	File System Counters
+		FILE: Number of bytes read=162
+		FILE: Number of bytes written=218721
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=193
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=6
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+	Job Counters 
+		Launched map tasks=1
+		Launched reduce tasks=1
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=2074
+		Total time spent by all reduces in occupied slots (ms)=1927
+		Total time spent by all map tasks (ms)=2074
+		Total time spent by all reduce tasks (ms)=1927
+		Total vcore-milliseconds taken by all map tasks=2074
+		Total vcore-milliseconds taken by all reduce tasks=1927
+		Total megabyte-milliseconds taken by all map tasks=2123776
+		Total megabyte-milliseconds taken by all reduce tasks=1973248
+	Map-Reduce Framework
+		Map input records=6
+		Map output records=6
+		Map output bytes=144
+		Map output materialized bytes=162
+		Input split bytes=117
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=6
+		Reduce shuffle bytes=162
+		Reduce input records=6
+		Reduce output records=0
+		Spilled Records=12
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=114
+		CPU time spent (ms)=540
+		Physical memory (bytes) snapshot=231845888
+		Virtual memory (bytes) snapshot=643309568
+		Total committed heap usage (bytes)=137498624
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=76
+	File Output Format Counters 
+		Bytes Written=0
+2020-10-17 18:28:25  [ main:0 ] - [ ERROR ]  上传文件失败D:\Java\Hadoop\test4hadoop\input\flowphone_data.txt (系统找不到指定的文件。)
+2020-10-17 18:28:25  [ main:113 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 18:28:25  [ main:461 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 18:28:28  [ main:3135 ] - [ INFO ]  Total input paths to process : 0
+2020-10-17 18:28:28  [ main:3195 ] - [ INFO ]  number of splits:0
+2020-10-17 18:28:28  [ main:3362 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0016
+2020-10-17 18:28:29  [ main:3545 ] - [ INFO ]  Submitted application application_1602894678591_0016
+2020-10-17 18:28:29  [ main:3579 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0016/
+2020-10-17 18:28:29  [ main:3581 ] - [ INFO ]  Running job: job_1602894678591_0016
+2020-10-17 18:28:34  [ main:8802 ] - [ INFO ]  Job job_1602894678591_0016 running in uber mode : false
+2020-10-17 18:28:34  [ main:8803 ] - [ INFO ]   map 0% reduce 0%
+2020-10-17 18:28:40  [ main:14848 ] - [ INFO ]   map 0% reduce 100%
+2020-10-17 18:28:40  [ main:14858 ] - [ INFO ]  Job job_1602894678591_0016 completed successfully
+2020-10-17 18:28:40  [ main:14950 ] - [ INFO ]  Counters: 38
+	File System Counters
+		FILE: Number of bytes read=0
+		FILE: Number of bytes written=109542
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=0
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=3
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+	Job Counters 
+		Launched reduce tasks=1
+		Total time spent by all maps in occupied slots (ms)=0
+		Total time spent by all reduces in occupied slots (ms)=2349
+		Total time spent by all reduce tasks (ms)=2349
+		Total vcore-milliseconds taken by all reduce tasks=2349
+		Total megabyte-milliseconds taken by all reduce tasks=2405376
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=0
+		Reduce shuffle bytes=0
+		Reduce input records=0
+		Reduce output records=0
+		Spilled Records=0
+		Shuffled Maps =0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=44
+		CPU time spent (ms)=140
+		Physical memory (bytes) snapshot=63111168
+		Virtual memory (bytes) snapshot=321523712
+		Total committed heap usage (bytes)=16318464
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Output Format Counters 
+		Bytes Written=0
+2020-10-17 18:29:13  [ main:0 ] - [ INFO ]  上传文件成功：phone_data.txt
+2020-10-17 18:29:13  [ main:94 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 18:29:45  [ main:0 ] - [ INFO ]  上传文件成功：phone_data.txt
+2020-10-17 18:29:45  [ main:114 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 18:29:45  [ main:415 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 18:29:48  [ main:3312 ] - [ INFO ]  Total input paths to process : 0
+2020-10-17 18:29:48  [ main:3379 ] - [ INFO ]  number of splits:0
+2020-10-17 18:29:49  [ main:3536 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0017
+2020-10-17 18:29:49  [ main:3710 ] - [ INFO ]  Submitted application application_1602894678591_0017
+2020-10-17 18:29:49  [ main:3745 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0017/
+2020-10-17 18:29:49  [ main:3746 ] - [ INFO ]  Running job: job_1602894678591_0017
+2020-10-17 18:29:54  [ main:8863 ] - [ INFO ]  Job job_1602894678591_0017 running in uber mode : false
+2020-10-17 18:29:54  [ main:8865 ] - [ INFO ]   map 0% reduce 0%
+2020-10-17 18:29:59  [ main:13910 ] - [ INFO ]   map 0% reduce 100%
+2020-10-17 18:29:59  [ main:13920 ] - [ INFO ]  Job job_1602894678591_0017 completed successfully
+2020-10-17 18:29:59  [ main:14018 ] - [ INFO ]  Counters: 38
+	File System Counters
+		FILE: Number of bytes read=0
+		FILE: Number of bytes written=109542
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=0
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=3
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+	Job Counters 
+		Launched reduce tasks=1
+		Total time spent by all maps in occupied slots (ms)=0
+		Total time spent by all reduces in occupied slots (ms)=1958
+		Total time spent by all reduce tasks (ms)=1958
+		Total vcore-milliseconds taken by all reduce tasks=1958
+		Total megabyte-milliseconds taken by all reduce tasks=2004992
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=0
+		Reduce shuffle bytes=0
+		Reduce input records=0
+		Reduce output records=0
+		Spilled Records=0
+		Shuffled Maps =0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=48
+		CPU time spent (ms)=140
+		Physical memory (bytes) snapshot=63094784
+		Virtual memory (bytes) snapshot=321523712
+		Total committed heap usage (bytes)=16318464
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Output Format Counters 
+		Bytes Written=0
+2020-10-17 18:31:37  [ main:0 ] - [ INFO ]  上传文件成功：phone_data.txt
+2020-10-17 18:31:37  [ main:128 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 18:31:37  [ main:405 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 18:31:39  [ main:2247 ] - [ INFO ]  Total input paths to process : 0
+2020-10-17 18:31:39  [ main:2306 ] - [ INFO ]  number of splits:0
+2020-10-17 18:31:39  [ main:2441 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0018
+2020-10-17 18:31:39  [ main:2623 ] - [ INFO ]  Submitted application application_1602894678591_0018
+2020-10-17 18:31:39  [ main:2651 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0018/
+2020-10-17 18:31:39  [ main:2651 ] - [ INFO ]  Running job: job_1602894678591_0018
+2020-10-17 18:31:44  [ main:7761 ] - [ INFO ]  Job job_1602894678591_0018 running in uber mode : false
+2020-10-17 18:31:44  [ main:7762 ] - [ INFO ]   map 0% reduce 0%
+2020-10-17 18:31:49  [ main:12804 ] - [ INFO ]   map 0% reduce 100%
+2020-10-17 18:31:49  [ main:12812 ] - [ INFO ]  Job job_1602894678591_0018 completed successfully
+2020-10-17 18:31:50  [ main:12934 ] - [ INFO ]  Counters: 38
+	File System Counters
+		FILE: Number of bytes read=0
+		FILE: Number of bytes written=109542
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=0
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=3
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+	Job Counters 
+		Launched reduce tasks=1
+		Total time spent by all maps in occupied slots (ms)=0
+		Total time spent by all reduces in occupied slots (ms)=1935
+		Total time spent by all reduce tasks (ms)=1935
+		Total vcore-milliseconds taken by all reduce tasks=1935
+		Total megabyte-milliseconds taken by all reduce tasks=1981440
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=0
+		Reduce shuffle bytes=0
+		Reduce input records=0
+		Reduce output records=0
+		Spilled Records=0
+		Shuffled Maps =0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=48
+		CPU time spent (ms)=140
+		Physical memory (bytes) snapshot=63082496
+		Virtual memory (bytes) snapshot=321523712
+		Total committed heap usage (bytes)=16318464
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Output Format Counters 
+		Bytes Written=0
+2020-10-17 18:32:52  [ main:0 ] - [ INFO ]  上传文件成功：phone_data.txt
+2020-10-17 18:32:52  [ main:137 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 18:32:52  [ main:421 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 18:32:54  [ main:1975 ] - [ INFO ]  Total input paths to process : 0
+2020-10-17 18:32:54  [ main:2026 ] - [ INFO ]  number of splits:0
+2020-10-17 18:32:54  [ main:2185 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0019
+2020-10-17 18:32:54  [ main:2357 ] - [ INFO ]  Submitted application application_1602894678591_0019
+2020-10-17 18:32:54  [ main:2395 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0019/
+2020-10-17 18:32:54  [ main:2396 ] - [ INFO ]  Running job: job_1602894678591_0019
+2020-10-17 18:32:59  [ main:7619 ] - [ INFO ]  Job job_1602894678591_0019 running in uber mode : false
+2020-10-17 18:32:59  [ main:7621 ] - [ INFO ]   map 0% reduce 0%
+2020-10-17 18:33:04  [ main:12665 ] - [ INFO ]   map 0% reduce 100%
+2020-10-17 18:33:04  [ main:12674 ] - [ INFO ]  Job job_1602894678591_0019 completed successfully
+2020-10-17 18:33:05  [ main:12780 ] - [ INFO ]  Counters: 38
+	File System Counters
+		FILE: Number of bytes read=0
+		FILE: Number of bytes written=109542
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=0
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=3
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+	Job Counters 
+		Launched reduce tasks=1
+		Total time spent by all maps in occupied slots (ms)=0
+		Total time spent by all reduces in occupied slots (ms)=1825
+		Total time spent by all reduce tasks (ms)=1825
+		Total vcore-milliseconds taken by all reduce tasks=1825
+		Total megabyte-milliseconds taken by all reduce tasks=1868800
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=0
+		Reduce shuffle bytes=0
+		Reduce input records=0
+		Reduce output records=0
+		Spilled Records=0
+		Shuffled Maps =0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=44
+		CPU time spent (ms)=120
+		Physical memory (bytes) snapshot=63238144
+		Virtual memory (bytes) snapshot=321523712
+		Total committed heap usage (bytes)=16318464
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Output Format Counters 
+		Bytes Written=0
+2020-10-17 18:37:03  [ main:0 ] - [ INFO ]  上传文件成功：phone_data.txt
+2020-10-17 18:37:03  [ main:125 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 18:37:03  [ main:404 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 18:37:06  [ main:3359 ] - [ INFO ]  Total input paths to process : 1
+2020-10-17 18:37:06  [ main:3426 ] - [ INFO ]  number of splits:1
+2020-10-17 18:37:06  [ main:3582 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0020
+2020-10-17 18:37:06  [ main:3817 ] - [ INFO ]  Submitted application application_1602894678591_0020
+2020-10-17 18:37:07  [ main:3866 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0020/
+2020-10-17 18:37:07  [ main:3867 ] - [ INFO ]  Running job: job_1602894678591_0020
+2020-10-17 18:37:12  [ main:9118 ] - [ INFO ]  Job job_1602894678591_0020 running in uber mode : false
+2020-10-17 18:37:12  [ main:9122 ] - [ INFO ]   map 0% reduce 0%
+2020-10-17 18:37:17  [ main:14177 ] - [ INFO ]   map 100% reduce 0%
+2020-10-17 18:37:21  [ main:18196 ] - [ INFO ]   map 100% reduce 100%
+2020-10-17 18:37:22  [ main:19207 ] - [ INFO ]  Job job_1602894678591_0020 completed successfully
+2020-10-17 18:37:22  [ main:19307 ] - [ INFO ]  Counters: 49
+	File System Counters
+		FILE: Number of bytes read=839
+		FILE: Number of bytes written=220817
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1306
+		HDFS: Number of bytes written=550
+		HDFS: Number of read operations=6
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+	Job Counters 
+		Launched map tasks=1
+		Launched reduce tasks=1
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=2412
+		Total time spent by all reduces in occupied slots (ms)=2082
+		Total time spent by all map tasks (ms)=2412
+		Total time spent by all reduce tasks (ms)=2082
+		Total vcore-milliseconds taken by all map tasks=2412
+		Total vcore-milliseconds taken by all reduce tasks=2082
+		Total megabyte-milliseconds taken by all map tasks=2469888
+		Total megabyte-milliseconds taken by all reduce tasks=2131968
+	Map-Reduce Framework
+		Map input records=22
+		Map output records=22
+		Map output bytes=789
+		Map output materialized bytes=839
+		Input split bytes=128
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=21
+		Reduce shuffle bytes=839
+		Reduce input records=22
+		Reduce output records=21
+		Spilled Records=44
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=125
+		CPU time spent (ms)=670
+		Physical memory (bytes) snapshot=233844736
+		Virtual memory (bytes) snapshot=644358144
+		Total committed heap usage (bytes)=137498624
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=1178
+	File Output Format Counters 
+		Bytes Written=550
+2020-10-17 18:50:07  [ main:0 ] - [ INFO ]  上传文件成功：test.nb
+2020-10-17 18:50:07  [ main:135 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 18:50:07  [ main:424 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 18:50:09  [ main:1642 ] - [ INFO ]  Total input paths to process : 1
+2020-10-17 18:50:09  [ main:1702 ] - [ INFO ]  number of splits:1
+2020-10-17 18:50:09  [ main:1852 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0021
+2020-10-17 18:50:09  [ main:2013 ] - [ INFO ]  Submitted application application_1602894678591_0021
+2020-10-17 18:50:09  [ main:2044 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0021/
+2020-10-17 18:50:09  [ main:2045 ] - [ INFO ]  Running job: job_1602894678591_0021
+2020-10-17 18:50:14  [ main:7271 ] - [ INFO ]  Job job_1602894678591_0021 running in uber mode : false
+2020-10-17 18:50:14  [ main:7273 ] - [ INFO ]   map 0% reduce 0%
+2020-10-17 18:50:18  [ main:11316 ] - [ INFO ]  Task Id : attempt_1602894678591_0021_m_000000_0, Status : FAILED
+2020-10-17 18:50:21  [ main:14346 ] - [ INFO ]  Task Id : attempt_1602894678591_0021_m_000000_1, Status : FAILED
+2020-10-17 18:50:25  [ main:18366 ] - [ INFO ]  Task Id : attempt_1602894678591_0021_m_000000_2, Status : FAILED
+2020-10-17 18:50:29  [ main:22390 ] - [ INFO ]   map 100% reduce 100%
+2020-10-17 18:50:29  [ main:22399 ] - [ INFO ]  Job job_1602894678591_0021 failed with state FAILED due to: Task failed task_1602894678591_0021_m_000000
+Job failed as tasks failed. failedMaps:1 failedReduces:0
+
+2020-10-17 18:50:29  [ main:22482 ] - [ INFO ]  Counters: 9
+	Job Counters 
+		Failed map tasks=4
+		Launched map tasks=4
+		Other local map tasks=3
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=8677
+		Total time spent by all reduces in occupied slots (ms)=0
+		Total time spent by all map tasks (ms)=8677
+		Total vcore-milliseconds taken by all map tasks=8677
+		Total megabyte-milliseconds taken by all map tasks=8885248
+2020-10-17 18:54:41  [ main:0 ] - [ INFO ]  上传文件成功：test.nb
+2020-10-17 18:54:41  [ main:132 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 18:54:41  [ main:405 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 18:54:44  [ main:3306 ] - [ INFO ]  Total input paths to process : 1
+2020-10-17 18:54:44  [ main:3361 ] - [ INFO ]  number of splits:1
+2020-10-17 18:54:44  [ main:3512 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0022
+2020-10-17 18:54:45  [ main:3687 ] - [ INFO ]  Submitted application application_1602894678591_0022
+2020-10-17 18:54:45  [ main:3722 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0022/
+2020-10-17 18:54:45  [ main:3722 ] - [ INFO ]  Running job: job_1602894678591_0022
+2020-10-17 18:54:50  [ main:8923 ] - [ INFO ]  Job job_1602894678591_0022 running in uber mode : false
+2020-10-17 18:54:50  [ main:8925 ] - [ INFO ]   map 0% reduce 0%
+2020-10-17 18:54:55  [ main:13979 ] - [ INFO ]  Task Id : attempt_1602894678591_0022_m_000000_0, Status : FAILED
+2020-10-17 18:54:59  [ main:18009 ] - [ INFO ]  Task Id : attempt_1602894678591_0022_m_000000_1, Status : FAILED
+2020-10-17 18:55:02  [ main:21024 ] - [ INFO ]  Task Id : attempt_1602894678591_0022_m_000000_2, Status : FAILED
+2020-10-17 18:55:07  [ main:26052 ] - [ INFO ]   map 100% reduce 100%
+2020-10-17 18:55:07  [ main:26060 ] - [ INFO ]  Job job_1602894678591_0022 failed with state FAILED due to: Task failed task_1602894678591_0022_m_000000
+Job failed as tasks failed. failedMaps:1 failedReduces:0
+
+2020-10-17 18:55:07  [ main:26148 ] - [ INFO ]  Counters: 9
+	Job Counters 
+		Failed map tasks=4
+		Launched map tasks=4
+		Other local map tasks=3
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=9880
+		Total time spent by all reduces in occupied slots (ms)=0
+		Total time spent by all map tasks (ms)=9880
+		Total vcore-milliseconds taken by all map tasks=9880
+		Total megabyte-milliseconds taken by all map tasks=10117120
+2020-10-17 18:56:20  [ main:0 ] - [ INFO ]  上传文件成功：test.nb
+2020-10-17 18:56:20  [ main:124 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 18:56:20  [ main:444 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 18:56:23  [ main:3122 ] - [ INFO ]  Total input paths to process : 1
+2020-10-17 18:56:23  [ main:3184 ] - [ INFO ]  number of splits:1
+2020-10-17 18:56:23  [ main:3342 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0023
+2020-10-17 18:56:24  [ main:3511 ] - [ INFO ]  Submitted application application_1602894678591_0023
+2020-10-17 18:56:24  [ main:3549 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0023/
+2020-10-17 18:56:24  [ main:3550 ] - [ INFO ]  Running job: job_1602894678591_0023
+2020-10-17 18:56:29  [ main:8664 ] - [ INFO ]  Job job_1602894678591_0023 running in uber mode : false
+2020-10-17 18:56:29  [ main:8665 ] - [ INFO ]   map 0% reduce 0%
+2020-10-17 18:56:33  [ main:12701 ] - [ INFO ]   map 100% reduce 0%
+2020-10-17 18:56:38  [ main:17724 ] - [ INFO ]   map 100% reduce 100%
+2020-10-17 18:56:38  [ main:17733 ] - [ INFO ]  Job job_1602894678591_0023 completed successfully
+2020-10-17 18:56:38  [ main:17836 ] - [ INFO ]  Counters: 49
+	File System Counters
+		FILE: Number of bytes read=102
+		FILE: Number of bytes written=219409
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=177
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=6
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+	Job Counters 
+		Launched map tasks=1
+		Launched reduce tasks=1
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=2038
+		Total time spent by all reduces in occupied slots (ms)=1936
+		Total time spent by all map tasks (ms)=2038
+		Total time spent by all reduce tasks (ms)=1936
+		Total vcore-milliseconds taken by all map tasks=2038
+		Total vcore-milliseconds taken by all reduce tasks=1936
+		Total megabyte-milliseconds taken by all map tasks=2086912
+		Total megabyte-milliseconds taken by all reduce tasks=1982464
+	Map-Reduce Framework
+		Map input records=6
+		Map output records=6
+		Map output bytes=84
+		Map output materialized bytes=102
+		Input split bytes=125
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=2
+		Reduce shuffle bytes=102
+		Reduce input records=6
+		Reduce output records=0
+		Spilled Records=12
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=117
+		CPU time spent (ms)=480
+		Physical memory (bytes) snapshot=231862272
+		Virtual memory (bytes) snapshot=643301376
+		Total committed heap usage (bytes)=137498624
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=52
+	File Output Format Counters 
+		Bytes Written=0
+2020-10-17 20:31:53  [ main:0 ] - [ INFO ]  上传文件成功：test.nb
+2020-10-17 20:31:53  [ main:132 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 20:31:53  [ main:436 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 20:31:55  [ main:2035 ] - [ INFO ]  Total input paths to process : 1
+2020-10-17 20:31:55  [ main:2096 ] - [ INFO ]  number of splits:1
+2020-10-17 20:31:55  [ main:2249 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0024
+2020-10-17 20:31:55  [ main:2437 ] - [ INFO ]  Submitted application application_1602894678591_0024
+2020-10-17 20:31:55  [ main:2476 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0024/
+2020-10-17 20:31:55  [ main:2478 ] - [ INFO ]  Running job: job_1602894678591_0024
+2020-10-17 20:32:01  [ main:7597 ] - [ INFO ]  Job job_1602894678591_0024 running in uber mode : false
+2020-10-17 20:32:01  [ main:7599 ] - [ INFO ]   map 0% reduce 0%
+2020-10-17 20:32:05  [ main:11650 ] - [ INFO ]   map 100% reduce 0%
+2020-10-17 20:32:09  [ main:15679 ] - [ INFO ]  Task Id : attempt_1602894678591_0024_r_000000_0, Status : FAILED
+2020-10-17 20:32:13  [ main:19715 ] - [ INFO ]  Task Id : attempt_1602894678591_0024_r_000000_1, Status : FAILED
+2020-10-17 20:32:18  [ main:24739 ] - [ INFO ]  Task Id : attempt_1602894678591_0024_r_000000_2, Status : FAILED
+2020-10-17 20:32:23  [ main:29761 ] - [ INFO ]   map 100% reduce 100%
+2020-10-17 20:32:23  [ main:29770 ] - [ INFO ]  Job job_1602894678591_0024 failed with state FAILED due to: Task failed task_1602894678591_0024_r_000000
+Job failed as tasks failed. failedMaps:0 failedReduces:1
+
+2020-10-17 20:32:23  [ main:29872 ] - [ INFO ]  Counters: 37
+	File System Counters
+		FILE: Number of bytes read=0
+		FILE: Number of bytes written=109732
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=177
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=3
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+	Job Counters 
+		Failed reduce tasks=4
+		Launched map tasks=1
+		Launched reduce tasks=4
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=2478
+		Total time spent by all reduces in occupied slots (ms)=7699
+		Total time spent by all map tasks (ms)=2478
+		Total time spent by all reduce tasks (ms)=7699
+		Total vcore-milliseconds taken by all map tasks=2478
+		Total vcore-milliseconds taken by all reduce tasks=7699
+		Total megabyte-milliseconds taken by all map tasks=2537472
+		Total megabyte-milliseconds taken by all reduce tasks=7883776
+	Map-Reduce Framework
+		Map input records=6
+		Map output records=6
+		Map output bytes=84
+		Map output materialized bytes=102
+		Input split bytes=125
+		Combine input records=0
+		Spilled Records=6
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=67
+		CPU time spent (ms)=310
+		Physical memory (bytes) snapshot=166744064
+		Virtual memory (bytes) snapshot=320577536
+		Total committed heap usage (bytes)=121180160
+	File Input Format Counters 
+		Bytes Read=52
+2020-10-17 20:36:52  [ main:0 ] - [ INFO ]  上传文件成功：test.nb
+2020-10-17 20:36:52  [ main:125 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 20:36:53  [ main:397 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 20:36:56  [ main:3363 ] - [ INFO ]  Total input paths to process : 1
+2020-10-17 20:36:56  [ main:3421 ] - [ INFO ]  number of splits:1
+2020-10-17 20:36:56  [ main:3569 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0025
+2020-10-17 20:36:56  [ main:3759 ] - [ INFO ]  Submitted application application_1602894678591_0025
+2020-10-17 20:36:56  [ main:3797 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0025/
+2020-10-17 20:36:56  [ main:3798 ] - [ INFO ]  Running job: job_1602894678591_0025
+2020-10-17 20:37:01  [ main:8905 ] - [ INFO ]  Job job_1602894678591_0025 running in uber mode : false
+2020-10-17 20:37:01  [ main:8907 ] - [ INFO ]   map 0% reduce 0%
+2020-10-17 20:37:05  [ main:12946 ] - [ INFO ]   map 100% reduce 0%
+2020-10-17 20:37:10  [ main:17982 ] - [ INFO ]   map 100% reduce 100%
+2020-10-17 20:37:10  [ main:17990 ] - [ INFO ]  Job job_1602894678591_0025 completed successfully
+2020-10-17 20:37:10  [ main:18100 ] - [ INFO ]  Counters: 49
+	File System Counters
+		FILE: Number of bytes read=102
+		FILE: Number of bytes written=219409
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=177
+		HDFS: Number of bytes written=14
+		HDFS: Number of read operations=6
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+	Job Counters 
+		Launched map tasks=1
+		Launched reduce tasks=1
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=2250
+		Total time spent by all reduces in occupied slots (ms)=2201
+		Total time spent by all map tasks (ms)=2250
+		Total time spent by all reduce tasks (ms)=2201
+		Total vcore-milliseconds taken by all map tasks=2250
+		Total vcore-milliseconds taken by all reduce tasks=2201
+		Total megabyte-milliseconds taken by all map tasks=2304000
+		Total megabyte-milliseconds taken by all reduce tasks=2253824
+	Map-Reduce Framework
+		Map input records=6
+		Map output records=6
+		Map output bytes=84
+		Map output materialized bytes=102
+		Input split bytes=125
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=2
+		Reduce shuffle bytes=102
+		Reduce input records=6
+		Reduce output records=2
+		Spilled Records=12
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=121
+		CPU time spent (ms)=610
+		Physical memory (bytes) snapshot=233324544
+		Virtual memory (bytes) snapshot=644485120
+		Total committed heap usage (bytes)=137498624
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=52
+	File Output Format Counters 
+		Bytes Written=14
+2020-10-17 20:43:36  [ main:0 ] - [ INFO ]  上传文件成功：test.nb
+2020-10-17 20:43:36  [ main:126 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 20:43:36  [ main:403 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 20:43:38  [ main:1905 ] - [ INFO ]  Total input paths to process : 1
+2020-10-17 20:43:38  [ main:1963 ] - [ INFO ]  number of splits:1
+2020-10-17 20:43:38  [ main:2113 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0026
+2020-10-17 20:43:38  [ main:2291 ] - [ INFO ]  Submitted application application_1602894678591_0026
+2020-10-17 20:43:38  [ main:2330 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0026/
+2020-10-17 20:43:38  [ main:2331 ] - [ INFO ]  Running job: job_1602894678591_0026
+2020-10-17 20:43:43  [ main:7441 ] - [ INFO ]  Job job_1602894678591_0026 running in uber mode : false
+2020-10-17 20:43:43  [ main:7442 ] - [ INFO ]   map 0% reduce 0%
+2020-10-17 20:43:47  [ main:11482 ] - [ INFO ]   map 100% reduce 0%
+2020-10-17 20:43:52  [ main:16509 ] - [ INFO ]   map 100% reduce 100%
+2020-10-17 20:43:52  [ main:16517 ] - [ INFO ]  Job job_1602894678591_0026 completed successfully
+2020-10-17 20:43:53  [ main:16626 ] - [ INFO ]  Counters: 49
+	File System Counters
+		FILE: Number of bytes read=102
+		FILE: Number of bytes written=219409
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=177
+		HDFS: Number of bytes written=14
+		HDFS: Number of read operations=6
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+	Job Counters 
+		Launched map tasks=1
+		Launched reduce tasks=1
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=2270
+		Total time spent by all reduces in occupied slots (ms)=2285
+		Total time spent by all map tasks (ms)=2270
+		Total time spent by all reduce tasks (ms)=2285
+		Total vcore-milliseconds taken by all map tasks=2270
+		Total vcore-milliseconds taken by all reduce tasks=2285
+		Total megabyte-milliseconds taken by all map tasks=2324480
+		Total megabyte-milliseconds taken by all reduce tasks=2339840
+	Map-Reduce Framework
+		Map input records=6
+		Map output records=6
+		Map output bytes=84
+		Map output materialized bytes=102
+		Input split bytes=125
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=2
+		Reduce shuffle bytes=102
+		Reduce input records=6
+		Reduce output records=2
+		Spilled Records=12
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=124
+		CPU time spent (ms)=730
+		Physical memory (bytes) snapshot=233422848
+		Virtual memory (bytes) snapshot=644485120
+		Total committed heap usage (bytes)=137498624
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=52
+	File Output Format Counters 
+		Bytes Written=14
+2020-10-17 20:48:51  [ main:0 ] - [ INFO ]  上传文件成功：test.nb
+2020-10-17 20:48:51  [ main:140 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 20:48:51  [ main:425 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 20:48:53  [ main:2444 ] - [ INFO ]  Total input paths to process : 1
+2020-10-17 20:48:53  [ main:2504 ] - [ INFO ]  number of splits:1
+2020-10-17 20:48:53  [ main:2651 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0027
+2020-10-17 20:48:53  [ main:2826 ] - [ INFO ]  Submitted application application_1602894678591_0027
+2020-10-17 20:48:53  [ main:2862 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0027/
+2020-10-17 20:48:53  [ main:2863 ] - [ INFO ]  Running job: job_1602894678591_0027
+2020-10-17 20:48:59  [ main:8088 ] - [ INFO ]  Job job_1602894678591_0027 running in uber mode : false
+2020-10-17 20:48:59  [ main:8090 ] - [ INFO ]   map 0% reduce 0%
+2020-10-17 20:49:04  [ main:13133 ] - [ INFO ]   map 100% reduce 0%
+2020-10-17 20:49:09  [ main:18166 ] - [ INFO ]   map 100% reduce 100%
+2020-10-17 20:49:09  [ main:18173 ] - [ INFO ]  Job job_1602894678591_0027 completed successfully
+2020-10-17 20:49:09  [ main:18270 ] - [ INFO ]  Counters: 49
+	File System Counters
+		FILE: Number of bytes read=102
+		FILE: Number of bytes written=219409
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=177
+		HDFS: Number of bytes written=14
+		HDFS: Number of read operations=6
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+	Job Counters 
+		Launched map tasks=1
+		Launched reduce tasks=1
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=2255
+		Total time spent by all reduces in occupied slots (ms)=2478
+		Total time spent by all map tasks (ms)=2255
+		Total time spent by all reduce tasks (ms)=2478
+		Total vcore-milliseconds taken by all map tasks=2255
+		Total vcore-milliseconds taken by all reduce tasks=2478
+		Total megabyte-milliseconds taken by all map tasks=2309120
+		Total megabyte-milliseconds taken by all reduce tasks=2537472
+	Map-Reduce Framework
+		Map input records=6
+		Map output records=6
+		Map output bytes=84
+		Map output materialized bytes=102
+		Input split bytes=125
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=2
+		Reduce shuffle bytes=102
+		Reduce input records=6
+		Reduce output records=2
+		Spilled Records=12
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=118
+		CPU time spent (ms)=740
+		Physical memory (bytes) snapshot=233705472
+		Virtual memory (bytes) snapshot=644349952
+		Total committed heap usage (bytes)=137498624
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=52
+	File Output Format Counters 
+		Bytes Written=14
+2020-10-17 20:50:50  [ main:0 ] - [ INFO ]  上传文件成功：test.nb
+2020-10-17 20:50:50  [ main:131 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 20:50:50  [ main:394 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 20:50:51  [ main:1560 ] - [ INFO ]  Total input paths to process : 1
+2020-10-17 20:50:52  [ main:1615 ] - [ INFO ]  number of splits:1
+2020-10-17 20:50:52  [ main:1770 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0028
+2020-10-17 20:50:52  [ main:1945 ] - [ INFO ]  Submitted application application_1602894678591_0028
+2020-10-17 20:50:52  [ main:1980 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0028/
+2020-10-17 20:50:52  [ main:1980 ] - [ INFO ]  Running job: job_1602894678591_0028
+2020-10-17 20:50:58  [ main:8102 ] - [ INFO ]  Job job_1602894678591_0028 running in uber mode : false
+2020-10-17 20:50:58  [ main:8104 ] - [ INFO ]   map 0% reduce 0%
+2020-10-17 20:51:03  [ main:13159 ] - [ INFO ]   map 100% reduce 0%
+2020-10-17 20:51:07  [ main:17178 ] - [ INFO ]   map 100% reduce 100%
+2020-10-17 20:51:08  [ main:18188 ] - [ INFO ]  Job job_1602894678591_0028 completed successfully
+2020-10-17 20:51:08  [ main:18297 ] - [ INFO ]  Counters: 49
+	File System Counters
+		FILE: Number of bytes read=102
+		FILE: Number of bytes written=219409
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=177
+		HDFS: Number of bytes written=14
+		HDFS: Number of read operations=6
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+	Job Counters 
+		Launched map tasks=1
+		Launched reduce tasks=1
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=2585
+		Total time spent by all reduces in occupied slots (ms)=2321
+		Total time spent by all map tasks (ms)=2585
+		Total time spent by all reduce tasks (ms)=2321
+		Total vcore-milliseconds taken by all map tasks=2585
+		Total vcore-milliseconds taken by all reduce tasks=2321
+		Total megabyte-milliseconds taken by all map tasks=2647040
+		Total megabyte-milliseconds taken by all reduce tasks=2376704
+	Map-Reduce Framework
+		Map input records=6
+		Map output records=6
+		Map output bytes=84
+		Map output materialized bytes=102
+		Input split bytes=125
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=2
+		Reduce shuffle bytes=102
+		Reduce input records=6
+		Reduce output records=2
+		Spilled Records=12
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=132
+		CPU time spent (ms)=1120
+		Physical memory (bytes) snapshot=233349120
+		Virtual memory (bytes) snapshot=644521984
+		Total committed heap usage (bytes)=137498624
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=52
+	File Output Format Counters 
+		Bytes Written=14
+2020-10-17 20:52:38  [ main:0 ] - [ INFO ]  上传文件成功：test.nb
+2020-10-17 20:52:38  [ main:110 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 20:52:38  [ main:387 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 20:52:41  [ main:2661 ] - [ INFO ]  Total input paths to process : 1
+2020-10-17 20:52:41  [ main:2712 ] - [ INFO ]  number of splits:1
+2020-10-17 20:52:41  [ main:2884 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0029
+2020-10-17 20:52:41  [ main:3102 ] - [ INFO ]  Submitted application application_1602894678591_0029
+2020-10-17 20:52:41  [ main:3137 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0029/
+2020-10-17 20:52:41  [ main:3138 ] - [ INFO ]  Running job: job_1602894678591_0029
+2020-10-17 20:52:46  [ main:8288 ] - [ INFO ]  Job job_1602894678591_0029 running in uber mode : false
+2020-10-17 20:52:46  [ main:8289 ] - [ INFO ]   map 0% reduce 0%
+2020-10-17 20:52:50  [ main:12331 ] - [ INFO ]   map 100% reduce 0%
+2020-10-17 20:52:55  [ main:17359 ] - [ INFO ]   map 100% reduce 100%
+2020-10-17 20:52:56  [ main:18373 ] - [ INFO ]  Job job_1602894678591_0029 completed successfully
+2020-10-17 20:52:57  [ main:18474 ] - [ INFO ]  Counters: 49
+	File System Counters
+		FILE: Number of bytes read=102
+		FILE: Number of bytes written=219409
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=177
+		HDFS: Number of bytes written=14
+		HDFS: Number of read operations=6
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+	Job Counters 
+		Launched map tasks=1
+		Launched reduce tasks=1
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=2101
+		Total time spent by all reduces in occupied slots (ms)=2461
+		Total time spent by all map tasks (ms)=2101
+		Total time spent by all reduce tasks (ms)=2461
+		Total vcore-milliseconds taken by all map tasks=2101
+		Total vcore-milliseconds taken by all reduce tasks=2461
+		Total megabyte-milliseconds taken by all map tasks=2151424
+		Total megabyte-milliseconds taken by all reduce tasks=2520064
+	Map-Reduce Framework
+		Map input records=6
+		Map output records=6
+		Map output bytes=84
+		Map output materialized bytes=102
+		Input split bytes=125
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=2
+		Reduce shuffle bytes=102
+		Reduce input records=6
+		Reduce output records=2
+		Spilled Records=12
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=131
+		CPU time spent (ms)=670
+		Physical memory (bytes) snapshot=233558016
+		Virtual memory (bytes) snapshot=644349952
+		Total committed heap usage (bytes)=137498624
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=52
+	File Output Format Counters 
+		Bytes Written=14
+2020-10-17 20:54:38  [ main:0 ] - [ INFO ]  上传文件成功：test.nb
+2020-10-17 20:54:38  [ main:126 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 20:54:38  [ main:398 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 20:54:40  [ main:1978 ] - [ INFO ]  Total input paths to process : 1
+2020-10-17 20:54:40  [ main:2036 ] - [ INFO ]  number of splits:1
+2020-10-17 20:54:40  [ main:2185 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0030
+2020-10-17 20:54:40  [ main:2376 ] - [ INFO ]  Submitted application application_1602894678591_0030
+2020-10-17 20:54:40  [ main:2411 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0030/
+2020-10-17 20:54:40  [ main:2412 ] - [ INFO ]  Running job: job_1602894678591_0030
+2020-10-17 20:54:45  [ main:7614 ] - [ INFO ]  Job job_1602894678591_0030 running in uber mode : false
+2020-10-17 20:54:45  [ main:7616 ] - [ INFO ]   map 0% reduce 0%
+2020-10-17 20:54:49  [ main:11659 ] - [ INFO ]   map 100% reduce 0%
+2020-10-17 20:54:54  [ main:16683 ] - [ INFO ]   map 100% reduce 100%
+2020-10-17 20:54:54  [ main:16693 ] - [ INFO ]  Job job_1602894678591_0030 completed successfully
+2020-10-17 20:54:55  [ main:16804 ] - [ INFO ]  Counters: 49
+	File System Counters
+		FILE: Number of bytes read=102
+		FILE: Number of bytes written=219409
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=177
+		HDFS: Number of bytes written=14
+		HDFS: Number of read operations=6
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+	Job Counters 
+		Launched map tasks=1
+		Launched reduce tasks=1
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=2055
+		Total time spent by all reduces in occupied slots (ms)=2013
+		Total time spent by all map tasks (ms)=2055
+		Total time spent by all reduce tasks (ms)=2013
+		Total vcore-milliseconds taken by all map tasks=2055
+		Total vcore-milliseconds taken by all reduce tasks=2013
+		Total megabyte-milliseconds taken by all map tasks=2104320
+		Total megabyte-milliseconds taken by all reduce tasks=2061312
+	Map-Reduce Framework
+		Map input records=6
+		Map output records=6
+		Map output bytes=84
+		Map output materialized bytes=102
+		Input split bytes=125
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=2
+		Reduce shuffle bytes=102
+		Reduce input records=6
+		Reduce output records=2
+		Spilled Records=12
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=117
+		CPU time spent (ms)=580
+		Physical memory (bytes) snapshot=233381888
+		Virtual memory (bytes) snapshot=644349952
+		Total committed heap usage (bytes)=137498624
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=52
+	File Output Format Counters 
+		Bytes Written=14
+2020-10-17 21:01:51  [ main:0 ] - [ INFO ]  上传文件成功：test.nb
+2020-10-17 21:01:51  [ main:129 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 21:01:52  [ main:406 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 21:01:55  [ main:3401 ] - [ INFO ]  Total input paths to process : 1
+2020-10-17 21:01:55  [ main:3450 ] - [ INFO ]  number of splits:1
+2020-10-17 21:01:55  [ main:3608 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0031
+2020-10-17 21:01:55  [ main:3786 ] - [ INFO ]  Submitted application application_1602894678591_0031
+2020-10-17 21:01:55  [ main:3830 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0031/
+2020-10-17 21:01:55  [ main:3830 ] - [ INFO ]  Running job: job_1602894678591_0031
+2020-10-17 21:02:00  [ main:9059 ] - [ INFO ]  Job job_1602894678591_0031 running in uber mode : false
+2020-10-17 21:02:00  [ main:9061 ] - [ INFO ]   map 0% reduce 0%
+2020-10-17 21:02:05  [ main:14105 ] - [ INFO ]   map 100% reduce 0%
+2020-10-17 21:02:09  [ main:18126 ] - [ INFO ]   map 100% reduce 100%
+2020-10-17 21:02:10  [ main:19140 ] - [ INFO ]  Job job_1602894678591_0031 completed successfully
+2020-10-17 21:02:11  [ main:19253 ] - [ INFO ]  Counters: 49
+	File System Counters
+		FILE: Number of bytes read=102
+		FILE: Number of bytes written=219409
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=177
+		HDFS: Number of bytes written=14
+		HDFS: Number of read operations=6
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+	Job Counters 
+		Launched map tasks=1
+		Launched reduce tasks=1
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=2239
+		Total time spent by all reduces in occupied slots (ms)=2328
+		Total time spent by all map tasks (ms)=2239
+		Total time spent by all reduce tasks (ms)=2328
+		Total vcore-milliseconds taken by all map tasks=2239
+		Total vcore-milliseconds taken by all reduce tasks=2328
+		Total megabyte-milliseconds taken by all map tasks=2292736
+		Total megabyte-milliseconds taken by all reduce tasks=2383872
+	Map-Reduce Framework
+		Map input records=6
+		Map output records=6
+		Map output bytes=84
+		Map output materialized bytes=102
+		Input split bytes=125
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=2
+		Reduce shuffle bytes=102
+		Reduce input records=6
+		Reduce output records=2
+		Spilled Records=12
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=118
+		CPU time spent (ms)=960
+		Physical memory (bytes) snapshot=233508864
+		Virtual memory (bytes) snapshot=644521984
+		Total committed heap usage (bytes)=137498624
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=52
+	File Output Format Counters 
+		Bytes Written=14
+2020-10-17 21:04:01  [ main:0 ] - [ INFO ]  上传文件成功：test.nb
+2020-10-17 21:04:02  [ main:133 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 21:04:02  [ main:411 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 21:04:05  [ main:4069 ] - [ INFO ]  Total input paths to process : 1
+2020-10-17 21:04:06  [ main:4122 ] - [ INFO ]  number of splits:1
+2020-10-17 21:04:06  [ main:4272 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0032
+2020-10-17 21:04:06  [ main:4468 ] - [ INFO ]  Submitted application application_1602894678591_0032
+2020-10-17 21:04:06  [ main:4511 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0032/
+2020-10-17 21:04:06  [ main:4512 ] - [ INFO ]  Running job: job_1602894678591_0032
+2020-10-17 21:04:11  [ main:9817 ] - [ INFO ]  Job job_1602894678591_0032 running in uber mode : false
+2020-10-17 21:04:11  [ main:9820 ] - [ INFO ]   map 0% reduce 0%
+2020-10-17 21:04:16  [ main:14909 ] - [ INFO ]   map 100% reduce 0%
+2020-10-17 21:04:20  [ main:18929 ] - [ INFO ]   map 100% reduce 100%
+2020-10-17 21:04:21  [ main:19942 ] - [ INFO ]  Job job_1602894678591_0032 completed successfully
+2020-10-17 21:04:21  [ main:20051 ] - [ INFO ]  Counters: 49
+	File System Counters
+		FILE: Number of bytes read=102
+		FILE: Number of bytes written=219409
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=177
+		HDFS: Number of bytes written=14
+		HDFS: Number of read operations=6
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+	Job Counters 
+		Launched map tasks=1
+		Launched reduce tasks=1
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=2276
+		Total time spent by all reduces in occupied slots (ms)=2051
+		Total time spent by all map tasks (ms)=2276
+		Total time spent by all reduce tasks (ms)=2051
+		Total vcore-milliseconds taken by all map tasks=2276
+		Total vcore-milliseconds taken by all reduce tasks=2051
+		Total megabyte-milliseconds taken by all map tasks=2330624
+		Total megabyte-milliseconds taken by all reduce tasks=2100224
+	Map-Reduce Framework
+		Map input records=6
+		Map output records=6
+		Map output bytes=84
+		Map output materialized bytes=102
+		Input split bytes=125
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=2
+		Reduce shuffle bytes=102
+		Reduce input records=6
+		Reduce output records=2
+		Spilled Records=12
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=160
+		CPU time spent (ms)=750
+		Physical memory (bytes) snapshot=233390080
+		Virtual memory (bytes) snapshot=644521984
+		Total committed heap usage (bytes)=137498624
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=52
+	File Output Format Counters 
+		Bytes Written=14
+2020-10-17 21:06:19  [ main:0 ] - [ INFO ]  上传文件成功：test.nb
+2020-10-17 21:06:19  [ main:114 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 21:06:19  [ main:427 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 21:06:20  [ main:1589 ] - [ INFO ]  Total input paths to process : 1
+2020-10-17 21:06:20  [ main:1643 ] - [ INFO ]  number of splits:1
+2020-10-17 21:06:21  [ main:1793 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0033
+2020-10-17 21:06:21  [ main:1979 ] - [ INFO ]  Submitted application application_1602894678591_0033
+2020-10-17 21:06:21  [ main:2014 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0033/
+2020-10-17 21:06:21  [ main:2015 ] - [ INFO ]  Running job: job_1602894678591_0033
+2020-10-17 21:06:26  [ main:7251 ] - [ INFO ]  Job job_1602894678591_0033 running in uber mode : false
+2020-10-17 21:06:26  [ main:7254 ] - [ INFO ]   map 0% reduce 0%
+2020-10-17 21:06:31  [ main:12299 ] - [ INFO ]   map 100% reduce 0%
+2020-10-17 21:06:36  [ main:17323 ] - [ INFO ]   map 100% reduce 100%
+2020-10-17 21:06:36  [ main:17333 ] - [ INFO ]  Job job_1602894678591_0033 completed successfully
+2020-10-17 21:06:36  [ main:17452 ] - [ INFO ]  Counters: 49
+	File System Counters
+		FILE: Number of bytes read=102
+		FILE: Number of bytes written=219409
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=177
+		HDFS: Number of bytes written=14
+		HDFS: Number of read operations=6
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+	Job Counters 
+		Launched map tasks=1
+		Launched reduce tasks=1
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=2197
+		Total time spent by all reduces in occupied slots (ms)=2310
+		Total time spent by all map tasks (ms)=2197
+		Total time spent by all reduce tasks (ms)=2310
+		Total vcore-milliseconds taken by all map tasks=2197
+		Total vcore-milliseconds taken by all reduce tasks=2310
+		Total megabyte-milliseconds taken by all map tasks=2249728
+		Total megabyte-milliseconds taken by all reduce tasks=2365440
+	Map-Reduce Framework
+		Map input records=6
+		Map output records=6
+		Map output bytes=84
+		Map output materialized bytes=102
+		Input split bytes=125
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=2
+		Reduce shuffle bytes=102
+		Reduce input records=6
+		Reduce output records=2
+		Spilled Records=12
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=160
+		CPU time spent (ms)=970
+		Physical memory (bytes) snapshot=233451520
+		Virtual memory (bytes) snapshot=644349952
+		Total committed heap usage (bytes)=137498624
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=52
+	File Output Format Counters 
+		Bytes Written=14
+2020-10-17 21:10:57  [ main:0 ] - [ INFO ]  上传文件成功：test.nb
+2020-10-17 21:10:57  [ main:113 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 21:10:57  [ main:402 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 21:11:00  [ main:2957 ] - [ INFO ]  Total input paths to process : 1
+2020-10-17 21:11:00  [ main:3014 ] - [ INFO ]  number of splits:1
+2020-10-17 21:11:00  [ main:3168 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0034
+2020-10-17 21:11:00  [ main:3345 ] - [ INFO ]  Submitted application application_1602894678591_0034
+2020-10-17 21:11:00  [ main:3384 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0034/
+2020-10-17 21:11:00  [ main:3385 ] - [ INFO ]  Running job: job_1602894678591_0034
+2020-10-17 21:11:05  [ main:8490 ] - [ INFO ]  Job job_1602894678591_0034 running in uber mode : false
+2020-10-17 21:11:05  [ main:8492 ] - [ INFO ]   map 0% reduce 0%
+2020-10-17 21:11:09  [ main:12533 ] - [ INFO ]   map 100% reduce 0%
+2020-10-17 21:11:14  [ main:17555 ] - [ INFO ]   map 100% reduce 100%
+2020-10-17 21:11:14  [ main:17564 ] - [ INFO ]  Job job_1602894678591_0034 completed successfully
+2020-10-17 21:11:14  [ main:17670 ] - [ INFO ]  Counters: 49
+	File System Counters
+		FILE: Number of bytes read=102
+		FILE: Number of bytes written=219409
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=177
+		HDFS: Number of bytes written=30
+		HDFS: Number of read operations=6
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+	Job Counters 
+		Launched map tasks=1
+		Launched reduce tasks=1
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=2251
+		Total time spent by all reduces in occupied slots (ms)=2006
+		Total time spent by all map tasks (ms)=2251
+		Total time spent by all reduce tasks (ms)=2006
+		Total vcore-milliseconds taken by all map tasks=2251
+		Total vcore-milliseconds taken by all reduce tasks=2006
+		Total megabyte-milliseconds taken by all map tasks=2305024
+		Total megabyte-milliseconds taken by all reduce tasks=2054144
+	Map-Reduce Framework
+		Map input records=6
+		Map output records=6
+		Map output bytes=84
+		Map output materialized bytes=102
+		Input split bytes=125
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=2
+		Reduce shuffle bytes=102
+		Reduce input records=6
+		Reduce output records=2
+		Spilled Records=12
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=120
+		CPU time spent (ms)=600
+		Physical memory (bytes) snapshot=233480192
+		Virtual memory (bytes) snapshot=644485120
+		Total committed heap usage (bytes)=137498624
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=52
+	File Output Format Counters 
+		Bytes Written=30
+2020-10-17 21:14:06  [ main:0 ] - [ INFO ]  上传文件成功：test.nb
+2020-10-17 21:14:06  [ main:136 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 21:14:06  [ main:449 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 21:14:08  [ main:2615 ] - [ INFO ]  Total input paths to process : 1
+2020-10-17 21:14:08  [ main:2672 ] - [ INFO ]  number of splits:1
+2020-10-17 21:14:09  [ main:2838 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0035
+2020-10-17 21:14:09  [ main:3004 ] - [ INFO ]  Submitted application application_1602894678591_0035
+2020-10-17 21:14:09  [ main:3033 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0035/
+2020-10-17 21:14:09  [ main:3034 ] - [ INFO ]  Running job: job_1602894678591_0035
+2020-10-17 21:14:14  [ main:8145 ] - [ INFO ]  Job job_1602894678591_0035 running in uber mode : false
+2020-10-17 21:14:14  [ main:8147 ] - [ INFO ]   map 0% reduce 0%
+2020-10-17 21:14:18  [ main:12185 ] - [ INFO ]   map 100% reduce 0%
+2020-10-17 21:14:23  [ main:17208 ] - [ INFO ]   map 100% reduce 100%
+2020-10-17 21:14:23  [ main:17217 ] - [ INFO ]  Job job_1602894678591_0035 completed successfully
+2020-10-17 21:14:23  [ main:17309 ] - [ INFO ]  Counters: 49
+	File System Counters
+		FILE: Number of bytes read=102
+		FILE: Number of bytes written=219409
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=177
+		HDFS: Number of bytes written=18
+		HDFS: Number of read operations=6
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+	Job Counters 
+		Launched map tasks=1
+		Launched reduce tasks=1
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=1874
+		Total time spent by all reduces in occupied slots (ms)=2110
+		Total time spent by all map tasks (ms)=1874
+		Total time spent by all reduce tasks (ms)=2110
+		Total vcore-milliseconds taken by all map tasks=1874
+		Total vcore-milliseconds taken by all reduce tasks=2110
+		Total megabyte-milliseconds taken by all map tasks=1918976
+		Total megabyte-milliseconds taken by all reduce tasks=2160640
+	Map-Reduce Framework
+		Map input records=6
+		Map output records=6
+		Map output bytes=84
+		Map output materialized bytes=102
+		Input split bytes=125
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=2
+		Reduce shuffle bytes=102
+		Reduce input records=6
+		Reduce output records=1
+		Spilled Records=12
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=118
+		CPU time spent (ms)=600
+		Physical memory (bytes) snapshot=233631744
+		Virtual memory (bytes) snapshot=645406720
+		Total committed heap usage (bytes)=137498624
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=52
+	File Output Format Counters 
+		Bytes Written=18
+2020-10-17 22:30:55  [ main:0 ] - [ INFO ]  上传文件成功：order.txt
+2020-10-17 22:30:55  [ main:52 ] - [ INFO ]  上传文件成功：pd.txt
+2020-10-17 22:30:55  [ main:185 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 22:30:55  [ main:469 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 22:30:57  [ main:2362 ] - [ INFO ]  Total input paths to process : 2
+2020-10-17 22:30:57  [ main:2414 ] - [ INFO ]  number of splits:2
+2020-10-17 22:30:57  [ main:2562 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0036
+2020-10-17 22:30:58  [ main:2744 ] - [ INFO ]  Submitted application application_1602894678591_0036
+2020-10-17 22:30:58  [ main:2776 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0036/
+2020-10-17 22:30:58  [ main:2777 ] - [ INFO ]  Running job: job_1602894678591_0036
+2020-10-17 22:31:04  [ main:9031 ] - [ INFO ]  Job job_1602894678591_0036 running in uber mode : false
+2020-10-17 22:31:04  [ main:9033 ] - [ INFO ]   map 0% reduce 0%
+2020-10-17 22:31:07  [ main:12075 ] - [ INFO ]  Task Id : attempt_1602894678591_0036_m_000000_0, Status : FAILED
+2020-10-17 22:31:07  [ main:12090 ] - [ INFO ]  Task Id : attempt_1602894678591_0036_m_000001_0, Status : FAILED
+2020-10-17 22:31:10  [ main:15107 ] - [ INFO ]  Task Id : attempt_1602894678591_0036_m_000001_1, Status : FAILED
+2020-10-17 22:31:11  [ main:16114 ] - [ INFO ]  Task Id : attempt_1602894678591_0036_m_000000_1, Status : FAILED
+2020-10-17 22:31:15  [ main:20142 ] - [ INFO ]  Task Id : attempt_1602894678591_0036_m_000001_2, Status : FAILED
+2020-10-17 22:31:15  [ main:20144 ] - [ INFO ]  Task Id : attempt_1602894678591_0036_m_000000_2, Status : FAILED
+2020-10-17 22:31:20  [ main:25175 ] - [ INFO ]   map 50% reduce 0%
+2020-10-17 22:31:21  [ main:26181 ] - [ INFO ]   map 100% reduce 100%
+2020-10-17 22:31:21  [ main:26188 ] - [ INFO ]  Job job_1602894678591_0036 failed with state FAILED due to: Task failed task_1602894678591_0036_m_000000
+Job failed as tasks failed. failedMaps:1 failedReduces:0
+
+2020-10-17 22:31:21  [ main:26266 ] - [ INFO ]  Counters: 13
+	Job Counters 
+		Failed map tasks=7
+		Killed map tasks=1
+		Launched map tasks=8
+		Other local map tasks=6
+		Data-local map tasks=2
+		Total time spent by all maps in occupied slots (ms)=18123
+		Total time spent by all reduces in occupied slots (ms)=0
+		Total time spent by all map tasks (ms)=18123
+		Total vcore-milliseconds taken by all map tasks=18123
+		Total megabyte-milliseconds taken by all map tasks=18557952
+	Map-Reduce Framework
+		CPU time spent (ms)=0
+		Physical memory (bytes) snapshot=0
+		Virtual memory (bytes) snapshot=0
+2020-10-17 22:32:16  [ main:0 ] - [ INFO ]  上传文件成功：order.txt
+2020-10-17 22:32:16  [ main:60 ] - [ INFO ]  上传文件成功：pd.txt
+2020-10-17 22:32:16  [ main:191 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 22:32:16  [ main:464 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 22:32:19  [ main:3306 ] - [ INFO ]  Total input paths to process : 2
+2020-10-17 22:32:19  [ main:3363 ] - [ INFO ]  number of splits:2
+2020-10-17 22:32:19  [ main:3519 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0037
+2020-10-17 22:32:19  [ main:3682 ] - [ INFO ]  Submitted application application_1602894678591_0037
+2020-10-17 22:32:20  [ main:3717 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0037/
+2020-10-17 22:32:20  [ main:3718 ] - [ INFO ]  Running job: job_1602894678591_0037
+2020-10-17 22:32:25  [ main:8870 ] - [ INFO ]  Job job_1602894678591_0037 running in uber mode : false
+2020-10-17 22:32:25  [ main:8872 ] - [ INFO ]   map 0% reduce 0%
+2020-10-17 22:32:28  [ main:11923 ] - [ INFO ]  Task Id : attempt_1602894678591_0037_m_000000_0, Status : FAILED
+2020-10-17 22:32:29  [ main:12947 ] - [ INFO ]  Task Id : attempt_1602894678591_0037_m_000001_0, Status : FAILED
+2020-10-17 22:32:32  [ main:15963 ] - [ INFO ]  Task Id : attempt_1602894678591_0037_m_000000_1, Status : FAILED
+2020-10-17 22:32:32  [ main:15965 ] - [ INFO ]  Task Id : attempt_1602894678591_0037_m_000001_1, Status : FAILED
+2020-10-17 22:32:36  [ main:19985 ] - [ INFO ]  Task Id : attempt_1602894678591_0037_m_000001_2, Status : FAILED
+2020-10-17 22:32:36  [ main:19987 ] - [ INFO ]  Task Id : attempt_1602894678591_0037_m_000000_2, Status : FAILED
+2020-10-17 22:32:41  [ main:25016 ] - [ INFO ]   map 100% reduce 100%
+2020-10-17 22:32:41  [ main:25025 ] - [ INFO ]  Job job_1602894678591_0037 failed with state FAILED due to: Task failed task_1602894678591_0037_m_000000
+Job failed as tasks failed. failedMaps:1 failedReduces:0
+
+2020-10-17 22:32:41  [ main:25091 ] - [ INFO ]  Counters: 9
+	Job Counters 
+		Failed map tasks=8
+		Launched map tasks=8
+		Other local map tasks=6
+		Data-local map tasks=2
+		Total time spent by all maps in occupied slots (ms)=16643
+		Total time spent by all reduces in occupied slots (ms)=0
+		Total time spent by all map tasks (ms)=16643
+		Total vcore-milliseconds taken by all map tasks=16643
+		Total megabyte-milliseconds taken by all map tasks=17042432
+2020-10-17 22:33:35  [ main:0 ] - [ INFO ]  上传文件成功：order.txt
+2020-10-17 22:33:35  [ main:59 ] - [ INFO ]  上传文件成功：pd.txt
+2020-10-17 22:33:35  [ main:195 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 22:33:36  [ main:481 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 22:33:37  [ main:1994 ] - [ INFO ]  Total input paths to process : 2
+2020-10-17 22:33:37  [ main:2054 ] - [ INFO ]  number of splits:2
+2020-10-17 22:33:37  [ main:2202 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0038
+2020-10-17 22:33:38  [ main:2373 ] - [ INFO ]  Submitted application application_1602894678591_0038
+2020-10-17 22:33:38  [ main:2407 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0038/
+2020-10-17 22:33:38  [ main:2409 ] - [ INFO ]  Running job: job_1602894678591_0038
+2020-10-17 22:33:44  [ main:8528 ] - [ INFO ]  Job job_1602894678591_0038 running in uber mode : false
+2020-10-17 22:33:44  [ main:8530 ] - [ INFO ]   map 0% reduce 0%
+2020-10-17 22:33:48  [ main:12572 ] - [ INFO ]   map 100% reduce 0%
+2020-10-17 22:33:53  [ main:17594 ] - [ INFO ]   map 100% reduce 100%
+2020-10-17 22:33:53  [ main:17604 ] - [ INFO ]  Job job_1602894678591_0038 completed successfully
+2020-10-17 22:33:53  [ main:17713 ] - [ INFO ]  Counters: 49
+	File System Counters
+		FILE: Number of bytes read=228
+		FILE: Number of bytes written=329207
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=340
+		HDFS: Number of bytes written=138
+		HDFS: Number of read operations=9
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+	Job Counters 
+		Launched map tasks=2
+		Launched reduce tasks=1
+		Data-local map tasks=2
+		Total time spent by all maps in occupied slots (ms)=4754
+		Total time spent by all reduces in occupied slots (ms)=2594
+		Total time spent by all map tasks (ms)=4754
+		Total time spent by all reduce tasks (ms)=2594
+		Total vcore-milliseconds taken by all map tasks=4754
+		Total vcore-milliseconds taken by all reduce tasks=2594
+		Total megabyte-milliseconds taken by all map tasks=4868096
+		Total megabyte-milliseconds taken by all reduce tasks=2656256
+	Map-Reduce Framework
+		Map input records=9
+		Map output records=9
+		Map output bytes=204
+		Map output materialized bytes=234
+		Input split bytes=245
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=3
+		Reduce shuffle bytes=234
+		Reduce input records=9
+		Reduce output records=6
+		Spilled Records=18
+		Shuffled Maps =2
+		Failed Shuffles=0
+		Merged Map outputs=2
+		GC time elapsed (ms)=197
+		CPU time spent (ms)=950
+		Physical memory (bytes) snapshot=400691200
+		Virtual memory (bytes) snapshot=966160384
+		Total committed heap usage (bytes)=258678784
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=95
+	File Output Format Counters 
+		Bytes Written=138
+2020-10-17 22:37:56  [ main:0 ] - [ INFO ]  上传文件成功：order.txt
+2020-10-17 22:37:56  [ main:53 ] - [ INFO ]  上传文件成功：pd.txt
+2020-10-17 22:37:56  [ main:191 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 22:37:56  [ main:462 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 22:37:59  [ main:3351 ] - [ INFO ]  Total input paths to process : 2
+2020-10-17 22:37:59  [ main:3403 ] - [ INFO ]  number of splits:2
+2020-10-17 22:37:59  [ main:3553 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0039
+2020-10-17 22:38:00  [ main:3735 ] - [ INFO ]  Submitted application application_1602894678591_0039
+2020-10-17 22:38:00  [ main:3770 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0039/
+2020-10-17 22:38:00  [ main:3771 ] - [ INFO ]  Running job: job_1602894678591_0039
+2020-10-17 22:38:05  [ main:8884 ] - [ INFO ]  Job job_1602894678591_0039 running in uber mode : false
+2020-10-17 22:38:05  [ main:8885 ] - [ INFO ]   map 0% reduce 0%
+2020-10-17 22:38:09  [ main:12937 ] - [ INFO ]   map 100% reduce 0%
+2020-10-17 22:38:11  [ main:0 ] - [ INFO ]  上传文件成功：test.nb
+2020-10-17 22:38:12  [ main:178 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 22:38:12  [ main:477 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 22:38:15  [ main:3351 ] - [ INFO ]  Total input paths to process : 1
+2020-10-17 22:38:15  [ main:3407 ] - [ INFO ]  number of splits:1
+2020-10-17 22:38:15  [ main:3562 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0040
+2020-10-17 22:38:15  [ main:3733 ] - [ INFO ]  Submitted application application_1602894678591_0040
+2020-10-17 22:38:15  [ main:3764 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0040/
+2020-10-17 22:38:15  [ main:3765 ] - [ INFO ]  Running job: job_1602894678591_0040
+2020-10-17 22:38:16  [ main:20005 ] - [ INFO ]   map 100% reduce 100%
+2020-10-17 22:38:16  [ main:20013 ] - [ INFO ]  Job job_1602894678591_0039 completed successfully
+2020-10-17 22:38:16  [ main:20135 ] - [ INFO ]  Counters: 49
+	File System Counters
+		FILE: Number of bytes read=228
+		FILE: Number of bytes written=329207
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=340
+		HDFS: Number of bytes written=138
+		HDFS: Number of read operations=9
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+	Job Counters 
+		Launched map tasks=2
+		Launched reduce tasks=1
+		Data-local map tasks=2
+		Total time spent by all maps in occupied slots (ms)=4540
+		Total time spent by all reduces in occupied slots (ms)=4213
+		Total time spent by all map tasks (ms)=4540
+		Total time spent by all reduce tasks (ms)=4213
+		Total vcore-milliseconds taken by all map tasks=4540
+		Total vcore-milliseconds taken by all reduce tasks=4213
+		Total megabyte-milliseconds taken by all map tasks=4648960
+		Total megabyte-milliseconds taken by all reduce tasks=4314112
+	Map-Reduce Framework
+		Map input records=9
+		Map output records=9
+		Map output bytes=204
+		Map output materialized bytes=234
+		Input split bytes=245
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=3
+		Reduce shuffle bytes=234
+		Reduce input records=9
+		Reduce output records=6
+		Spilled Records=18
+		Shuffled Maps =2
+		Failed Shuffles=0
+		Merged Map outputs=2
+		GC time elapsed (ms)=201
+		CPU time spent (ms)=1000
+		Physical memory (bytes) snapshot=400711680
+		Virtual memory (bytes) snapshot=966160384
+		Total committed heap usage (bytes)=258678784
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=95
+	File Output Format Counters 
+		Bytes Written=138
+2020-10-17 22:38:20  [ main:8881 ] - [ INFO ]  Job job_1602894678591_0040 running in uber mode : false
+2020-10-17 22:38:20  [ main:8883 ] - [ INFO ]   map 0% reduce 0%
+2020-10-17 22:38:26  [ main:14946 ] - [ INFO ]   map 100% reduce 0%
+2020-10-17 22:38:31  [ main:19974 ] - [ INFO ]   map 100% reduce 100%
+2020-10-17 22:38:32  [ main:20986 ] - [ INFO ]  Job job_1602894678591_0040 completed successfully
+2020-10-17 22:38:32  [ main:21089 ] - [ INFO ]  Counters: 49
+	File System Counters
+		FILE: Number of bytes read=102
+		FILE: Number of bytes written=219409
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=177
+		HDFS: Number of bytes written=132
+		HDFS: Number of read operations=6
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+	Job Counters 
+		Launched map tasks=1
+		Launched reduce tasks=1
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=4008
+		Total time spent by all reduces in occupied slots (ms)=2511
+		Total time spent by all map tasks (ms)=4008
+		Total time spent by all reduce tasks (ms)=2511
+		Total vcore-milliseconds taken by all map tasks=4008
+		Total vcore-milliseconds taken by all reduce tasks=2511
+		Total megabyte-milliseconds taken by all map tasks=4104192
+		Total megabyte-milliseconds taken by all reduce tasks=2571264
+	Map-Reduce Framework
+		Map input records=6
+		Map output records=6
+		Map output bytes=84
+		Map output materialized bytes=102
+		Input split bytes=125
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=2
+		Reduce shuffle bytes=102
+		Reduce input records=6
+		Reduce output records=8
+		Spilled Records=12
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=126
+		CPU time spent (ms)=2380
+		Physical memory (bytes) snapshot=233869312
+		Virtual memory (bytes) snapshot=645406720
+		Total committed heap usage (bytes)=137498624
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=52
+	File Output Format Counters 
+		Bytes Written=132
+2020-10-17 22:40:25  [ main:0 ] - [ INFO ]  上传文件成功：test.nb
+2020-10-17 22:40:25  [ main:120 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 22:40:26  [ main:414 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 22:40:28  [ main:2305 ] - [ INFO ]  Total input paths to process : 1
+2020-10-17 22:40:28  [ main:2360 ] - [ INFO ]  number of splits:1
+2020-10-17 22:40:28  [ main:2508 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0041
+2020-10-17 22:40:28  [ main:2686 ] - [ INFO ]  Submitted application application_1602894678591_0041
+2020-10-17 22:40:28  [ main:2715 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0041/
+2020-10-17 22:40:28  [ main:2716 ] - [ INFO ]  Running job: job_1602894678591_0041
+2020-10-17 22:40:33  [ main:7828 ] - [ INFO ]  Job job_1602894678591_0041 running in uber mode : false
+2020-10-17 22:40:33  [ main:7830 ] - [ INFO ]   map 0% reduce 0%
+2020-10-17 22:40:37  [ main:11863 ] - [ INFO ]   map 100% reduce 0%
+2020-10-17 22:40:42  [ main:16893 ] - [ INFO ]   map 100% reduce 100%
+2020-10-17 22:40:42  [ main:16905 ] - [ INFO ]  Job job_1602894678591_0041 completed successfully
+2020-10-17 22:40:42  [ main:17032 ] - [ INFO ]  Counters: 49
+	File System Counters
+		FILE: Number of bytes read=102
+		FILE: Number of bytes written=219409
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=177
+		HDFS: Number of bytes written=96
+		HDFS: Number of read operations=6
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+	Job Counters 
+		Launched map tasks=1
+		Launched reduce tasks=1
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=2404
+		Total time spent by all reduces in occupied slots (ms)=2298
+		Total time spent by all map tasks (ms)=2404
+		Total time spent by all reduce tasks (ms)=2298
+		Total vcore-milliseconds taken by all map tasks=2404
+		Total vcore-milliseconds taken by all reduce tasks=2298
+		Total megabyte-milliseconds taken by all map tasks=2461696
+		Total megabyte-milliseconds taken by all reduce tasks=2353152
+	Map-Reduce Framework
+		Map input records=6
+		Map output records=6
+		Map output bytes=84
+		Map output materialized bytes=102
+		Input split bytes=125
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=2
+		Reduce shuffle bytes=102
+		Reduce input records=6
+		Reduce output records=6
+		Spilled Records=12
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=123
+		CPU time spent (ms)=660
+		Physical memory (bytes) snapshot=233865216
+		Virtual memory (bytes) snapshot=645713920
+		Total committed heap usage (bytes)=137498624
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=52
+	File Output Format Counters 
+		Bytes Written=96
+2020-10-17 23:00:37  [ main:0 ] - [ INFO ]  上传文件成功：order.txt
+2020-10-17 23:00:37  [ main:53 ] - [ INFO ]  上传文件成功：pd.txt
+2020-10-17 23:00:37  [ main:173 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 23:00:38  [ main:440 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 23:00:40  [ main:2316 ] - [ INFO ]  Total input paths to process : 2
+2020-10-17 23:00:40  [ main:2371 ] - [ INFO ]  number of splits:2
+2020-10-17 23:00:40  [ main:2521 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0042
+2020-10-17 23:00:40  [ main:2689 ] - [ INFO ]  Submitted application application_1602894678591_0042
+2020-10-17 23:00:40  [ main:2725 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0042/
+2020-10-17 23:00:40  [ main:2725 ] - [ INFO ]  Running job: job_1602894678591_0042
+2020-10-17 23:01:37  [ main:0 ] - [ INFO ]  上传文件成功：order.txt
+2020-10-17 23:01:38  [ main:226 ] - [ INFO ]  上传文件成功：pd.txt
+2020-10-17 23:01:38  [ main:380 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 23:01:38  [ main:631 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 23:01:40  [ main:3147 ] - [ INFO ]  Total input paths to process : 2
+2020-10-17 23:01:41  [ main:3201 ] - [ INFO ]  number of splits:2
+2020-10-17 23:01:41  [ main:3358 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0043
+2020-10-17 23:01:41  [ main:3547 ] - [ INFO ]  Submitted application application_1602894678591_0043
+2020-10-17 23:01:41  [ main:3584 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0043/
+2020-10-17 23:01:41  [ main:3585 ] - [ INFO ]  Running job: job_1602894678591_0043
+2020-10-17 23:01:46  [ main:8779 ] - [ INFO ]  Job job_1602894678591_0043 running in uber mode : false
+2020-10-17 23:01:46  [ main:8781 ] - [ INFO ]   map 0% reduce 0%
+2020-10-17 23:01:50  [ main:12819 ] - [ INFO ]   map 50% reduce 0%
+2020-10-17 23:01:51  [ main:13830 ] - [ INFO ]   map 100% reduce 0%
+2020-10-17 23:01:51  [ main:13838 ] - [ INFO ]  Job job_1602894678591_0043 completed successfully
+2020-10-17 23:01:51  [ main:13927 ] - [ INFO ]  Counters: 30
+	File System Counters
+		FILE: Number of bytes read=0
+		FILE: Number of bytes written=219548
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=340
+		HDFS: Number of bytes written=147
+		HDFS: Number of read operations=10
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=4
+	Job Counters 
+		Launched map tasks=2
+		Data-local map tasks=2
+		Total time spent by all maps in occupied slots (ms)=4695
+		Total time spent by all reduces in occupied slots (ms)=0
+		Total time spent by all map tasks (ms)=4695
+		Total vcore-milliseconds taken by all map tasks=4695
+		Total megabyte-milliseconds taken by all map tasks=4807680
+	Map-Reduce Framework
+		Map input records=9
+		Map output records=9
+		Input split bytes=245
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=108
+		CPU time spent (ms)=540
+		Physical memory (bytes) snapshot=128356352
+		Virtual memory (bytes) snapshot=642490368
+		Total committed heap usage (bytes)=32636928
+	File Input Format Counters 
+		Bytes Read=95
+	File Output Format Counters 
+		Bytes Written=147
+2020-10-17 23:09:47  [ main:0 ] - [ INFO ]  上传文件成功：order.txt
+2020-10-17 23:09:47  [ main:50 ] - [ INFO ]  上传文件成功：pd.txt
+2020-10-17 23:09:47  [ main:163 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 23:09:48  [ main:448 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 23:09:51  [ main:3423 ] - [ INFO ]  Total input paths to process : 2
+2020-10-17 23:09:51  [ main:3472 ] - [ INFO ]  number of splits:2
+2020-10-17 23:09:51  [ main:3616 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0044
+2020-10-17 23:09:51  [ main:3804 ] - [ INFO ]  Submitted application application_1602894678591_0044
+2020-10-17 23:09:51  [ main:3833 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0044/
+2020-10-17 23:09:51  [ main:3833 ] - [ INFO ]  Running job: job_1602894678591_0044
+2020-10-17 23:09:56  [ main:8946 ] - [ INFO ]  Job job_1602894678591_0044 running in uber mode : false
+2020-10-17 23:09:56  [ main:8948 ] - [ INFO ]   map 0% reduce 0%
+2020-10-17 23:10:01  [ main:14003 ] - [ INFO ]   map 100% reduce 0%
+2020-10-17 23:10:01  [ main:14011 ] - [ INFO ]  Job job_1602894678591_0044 completed successfully
+2020-10-17 23:10:01  [ main:14108 ] - [ INFO ]  Counters: 30
+	File System Counters
+		FILE: Number of bytes read=0
+		FILE: Number of bytes written=219546
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=340
+		HDFS: Number of bytes written=147
+		HDFS: Number of read operations=10
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=4
+	Job Counters 
+		Launched map tasks=2
+		Data-local map tasks=2
+		Total time spent by all maps in occupied slots (ms)=5366
+		Total time spent by all reduces in occupied slots (ms)=0
+		Total time spent by all map tasks (ms)=5366
+		Total vcore-milliseconds taken by all map tasks=5366
+		Total megabyte-milliseconds taken by all map tasks=5494784
+	Map-Reduce Framework
+		Map input records=9
+		Map output records=9
+		Input split bytes=245
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=124
+		CPU time spent (ms)=610
+		Physical memory (bytes) snapshot=128577536
+		Virtual memory (bytes) snapshot=642727936
+		Total committed heap usage (bytes)=32636928
+	File Input Format Counters 
+		Bytes Read=95
+	File Output Format Counters 
+		Bytes Written=147
+2020-10-17 23:12:41  [ main:0 ] - [ INFO ]  上传文件成功：order.txt
+2020-10-17 23:12:41  [ main:53 ] - [ INFO ]  上传文件成功：pd.txt
+2020-10-17 23:12:41  [ main:179 ] - [ INFO ]  Connecting to ResourceManager at sparkproject1/192.168.80.238:8032
+2020-10-17 23:12:41  [ main:444 ] - [ WARN ]  Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-10-17 23:12:43  [ main:2294 ] - [ INFO ]  Total input paths to process : 1
+2020-10-17 23:12:43  [ main:2349 ] - [ INFO ]  number of splits:1
+2020-10-17 23:12:43  [ main:2527 ] - [ INFO ]  Submitting tokens for job: job_1602894678591_0045
+2020-10-17 23:12:44  [ main:2714 ] - [ INFO ]  Submitted application application_1602894678591_0045
+2020-10-17 23:12:44  [ main:2748 ] - [ INFO ]  The url to track the job: http://sparkproject1:8088/proxy/application_1602894678591_0045/
+2020-10-17 23:12:44  [ main:2749 ] - [ INFO ]  Running job: job_1602894678591_0045
+2020-10-17 23:12:49  [ main:7906 ] - [ INFO ]  Job job_1602894678591_0045 running in uber mode : false
+2020-10-17 23:12:49  [ main:7908 ] - [ INFO ]   map 0% reduce 0%
+2020-10-17 23:12:54  [ main:12952 ] - [ INFO ]   map 100% reduce 0%
+2020-10-17 23:12:54  [ main:12961 ] - [ INFO ]  Job job_1602894678591_0045 completed successfully
+2020-10-17 23:12:54  [ main:13058 ] - [ INFO ]  Counters: 30
+	File System Counters
+		FILE: Number of bytes read=0
+		FILE: Number of bytes written=109773
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=188
+		HDFS: Number of bytes written=102
+		HDFS: Number of read operations=5
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+	Job Counters 
+		Launched map tasks=1
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=2430
+		Total time spent by all reduces in occupied slots (ms)=0
+		Total time spent by all map tasks (ms)=2430
+		Total vcore-milliseconds taken by all map tasks=2430
+		Total megabyte-milliseconds taken by all map tasks=2488320
+	Map-Reduce Framework
+		Map input records=6
+		Map output records=6
+		Input split bytes=124
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=53
+		CPU time spent (ms)=250
+		Physical memory (bytes) snapshot=64270336
+		Virtual memory (bytes) snapshot=321245184
+		Total committed heap usage (bytes)=16318464
+	File Input Format Counters 
+		Bytes Read=64
+	File Output Format Counters 
+		Bytes Written=102
