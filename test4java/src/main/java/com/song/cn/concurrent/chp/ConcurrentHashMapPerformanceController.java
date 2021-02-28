@@ -1,4 +1,4 @@
-package com.song.cn.concurrent.concurrenthashmapperformance;
+package com.song.cn.concurrent.chp;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.util.Assert;

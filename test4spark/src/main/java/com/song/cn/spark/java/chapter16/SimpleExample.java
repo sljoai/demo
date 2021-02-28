@@ -27,17 +27,13 @@ public class SimpleExample {
     public static void main(String[] args) {
         SparkConf sparkConf = new SparkConf()
                 .setMaster("spark://sparkproject1:7077")
-//                .setMaster("local[1]")
+               //.setMaster("local[1]")
                 .setAppName("test");
-        sparkConf.setJars(new String[]{"D:\\Java\\SRC\\test\\test4spark\\target\\test4spark-1.0-SNAPSHOT-jar-with-dependencies.jar"});
+        sparkConf.setJars(new String[]{"test4spark\\target\\test4spark-1.0-SNAPSHOT-jar-with-dependencies.jar"});
 
         JavaSparkContext context = new JavaSparkContext(sparkConf);
         //读取输入数据
         JavaRDD inputRDD = context.textFile("hdfs://sparkproject1:9000/user/root/users.txt");
-//        JavaRDD inputRDD = context.textFile("file:/D:/Java/SRC/test/README.md");
-//        JavaRDD inputRDD = context.textFile("file:/usr/local/spark/README.md");
-        System.out.println("-------------------input------------------");
-
         inputRDD.first();
         //切分单词
         JavaRDD wordCountRDD = inputRDD.flatMap(

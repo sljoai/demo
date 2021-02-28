@@ -1,4 +1,4 @@
-package com.song.cn.concurrent.concurrenthashmapperformance;
+package com.song.cn.concurrent.chp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
