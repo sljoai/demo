@@ -10,7 +10,7 @@
 
     <properties>
         <compiler.version>1.8</compiler.version>
-        <flink.version>1.8.0</flink.version>
+        <flink.version>1.10.0</flink.version>
         <java.version>1.8</java.version>
         <scala.binary.version>2.11</scala.binary.version>
 
@@ -29,13 +29,13 @@
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-streaming-java_${scala.binary.version}</artifactId>
             <version>${flink.version}</version>
-            <scope>provided</scope>
-            <exclusions>
+            <!--<scope>provided</scope>-->
+            <!--<exclusions>
                 <exclusion>
                     <groupId>org.apache.flink</groupId>
                     <artifactId>flink-clients_2.11</artifactId>
                 </exclusion>
-            </exclusions>
+            </exclusions>-->
         </dependency>
         <dependency>
             <groupId>org.apache.flink</groupId>
