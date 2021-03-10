@@ -1,4 +1,4 @@
-package com.song.cn.hadoop.mr.wordcount.flatsum;
+package com.song.cn.hadoop.mr.wordcount.flow;
 
 import org.apache.hadoop.io.Writable;
 

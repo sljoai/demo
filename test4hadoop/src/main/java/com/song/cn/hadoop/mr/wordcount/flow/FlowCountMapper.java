@@ -33,6 +33,6 @@ public class FlowCountMapper extends Mapper<LongWritable, Text, Text, FlowBean> 
         valueRes.setSumFlow(upFlow + downFLow);
 
         // 4 写出
-        context.write(keyRes, valueRes);
+        context.write(keyRes,valueRes);
     }
 }

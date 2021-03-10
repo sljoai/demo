@@ -19,7 +19,7 @@ public class Test4HBase {
     static {
         //使用HBaseConfiguration的单例方法实例化
         configuration = HBaseConfiguration.create();
-        configuration.set("hbase.zookeeper.quorum", "127.0.0.1");
+        configuration.set("hbase.zookeeper.quorum", "192.168.80.110");
         configuration.set("hbase.zookeeper.property.clientPort", "2181");
     }
 
@@ -76,6 +76,7 @@ public class Test4HBase {
         Put put = new Put(Bytes.toBytes(rowKey));
         //向Put对象中组装数据
         put.add(Bytes.toBytes(columnFamily), Bytes.toBytes(column), Bytes.toBytes(value));
+
         hTable.put(put);
         hTable.close();
         System.out.println("插入数据成功");

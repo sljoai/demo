@@ -3,7 +3,10 @@ package com.song.cn.hbase.test;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.HBaseConfiguration;
 import org.apache.hadoop.hbase.TableName;
-import org.apache.hadoop.hbase.client.*;
+import org.apache.hadoop.hbase.client.Connection;
+import org.apache.hadoop.hbase.client.ConnectionFactory;
+import org.apache.hadoop.hbase.client.Put;
+import org.apache.hadoop.hbase.client.Table;
 import org.apache.hadoop.hbase.util.Bytes;
 
 import java.io.IOException;
@@ -61,5 +64,38 @@ public class HBaseUtil {
                 Bytes.toBytes(column),
                 Bytes.toBytes(value));
         table.put(put);
+    }
+
+    /**
+     * 获取分区键
+     *
+     * @param regionCount 分区数量
+     * @return 分区键字节数组
+     */
+    public static byte[][] getRegionKeys(int regionCount) {
+        byte[][] bs = new byte[regionCount][];
+
+        for (int i = 0; i < regionCount; i++) {
+            bs[i] = Bytes.toBytes(i + "|");
+        }
+        return bs;
+    }
+
+    /**
+     * 根据rowKey和分区号，获取主键号
+     * @param rowKey
+     * @param regionCount
+     * @return
+     */
+    public static String getRegionName(String rowKey, int regionCount) {
+        int regionNum;
+        int hash = rowKey.hashCode();
+
+        if (regionCount > 0 && (regionCount & (regionCount - 1)) == 0) {
+            regionNum = hash & (regionCount - 1);
+        } else {
+            regionNum = hash % regionCount;
+        }
+        return regionNum + "_" + rowKey;
     }
 }

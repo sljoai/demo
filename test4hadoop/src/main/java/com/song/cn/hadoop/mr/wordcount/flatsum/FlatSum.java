@@ -1,7 +1,9 @@
 package com.song.cn.hadoop.mr.wordcount.flatsum;
 
 import com.song.cn.hadoop.conf.Conf;
+
 import com.song.cn.hadoop.hdfs.Files;
+import com.song.cn.hadoop.mr.wordcount.flow.NumberBean;
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.Text;
