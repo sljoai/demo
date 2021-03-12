@@ -1,0 +1,19 @@
+syntax = "proto3";
+package com.song.cn.grpc;
+
+option java_package = "com.song.cn.grpc";
+option java_outer_classname = "MyDataInfo";
+option java_multiple_files = true;
+
+service StudentService {
+    rpc GetRealNameByUsername (MyRequest) returns (MyResponse) {
+    }
+}
+
+message MyRequest {
+    string username = 1;
+}
+
+message MyResponse {
+    string realName = 2;
+}
