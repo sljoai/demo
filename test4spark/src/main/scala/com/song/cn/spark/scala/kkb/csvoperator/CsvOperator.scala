@@ -1,8 +1,5 @@
 package com.song.cn.spark.scala.kkb.csvoperator
 
-import org.apache.spark.SparkConf
-import org.apache.spark.sql.{DataFrame, SaveMode, SparkSession}
-
 import java.util.Properties
 
 /**
@@ -33,7 +30,6 @@ object CsvOperator {
     prop.put("password", "123456")
     frame.write.mode(SaveMode.Append)
       .jdbc("jdbc:mysql://node03:3306/job_crawel?useUnicode=true&characterEncoding=UTF-8", "job_crawel.jobdetail", prop)
-  }
   }
 
 }
