@@ -1,3 +1,6 @@
+```20210316```
+* 添加 Flink sink 相关 demo：kafka / redis / es / mysql
+
 ```20210313```
 * 添加 netty 的demo
 

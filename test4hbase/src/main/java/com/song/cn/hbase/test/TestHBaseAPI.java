@@ -12,12 +12,11 @@ import java.io.IOException;
  * 通过Java代码访问hbase数据库
  */
 public class TestHBaseAPI {
-
-
-
     static {
         PropertyConfigurator.configure("conf/log4j.properties");
     }
+
+    private static final int REGION_COUNT = 10;
 
     public static void main(String[] args) throws IOException {
 
@@ -43,7 +42,7 @@ public class TestHBaseAPI {
         }
 
         // 3-2) 判断hbase中是否存在某张表
-        TableName student = TableName.valueOf("student1S");
+        TableName student = TableName.valueOf("student_rk");
         boolean exists = admin.tableExists(student);
         System.out.println(exists);
 
@@ -52,15 +51,16 @@ public class TestHBaseAPI {
             Table table = connection.getTable(student);
             // 查询数据
             String rowKey = "1001";
+            String realRowKey = HBaseUtil.getRegionName(rowKey,REGION_COUNT);
 
             // 字符编码
-            Get get = new Get(Bytes.toBytes(rowKey));
+            Get get = new Get(Bytes.toBytes(realRowKey));
 
             Result result = table.get(get);
             boolean empty = result.isEmpty();
             if (empty) {
                 // 新增数据
-                Put put = new Put(Bytes.toBytes(rowKey));
+                Put put = new Put(Bytes.toBytes(realRowKey));
                 String family = "info";
                 String column = "name";
                 String value = "张三";
@@ -85,22 +85,17 @@ public class TestHBaseAPI {
 
             // 创建表的描述对象
             HTableDescriptor hTableDescriptor = new HTableDescriptor(student);
+            // 添加协处理器
+            hTableDescriptor.addCoprocessor("com.song.cn.hbase.coprocessor.InsertStudentCoProcessor");
             // 增加列族
             HColumnDescriptor columnDescriptor = new HColumnDescriptor("info");
             hTableDescriptor.addFamily(columnDescriptor);
-            admin.createTable(hTableDescriptor);
+
+            // 分配并创建分区键
+            admin.createTable(hTableDescriptor,HBaseUtil.getRegionKeys(REGION_COUNT));
             System.out.println("表创建成功...");
         }
 
     }
-
-    public static void delete(){
-
-    }
-
-    public static void getAllData(){
-        //
-    }
-
 
 }
