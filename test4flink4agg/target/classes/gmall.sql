@@ -1,0 +1,1 @@
+create table z_startup(MID varchar(10),ch varchar(10),vs varchar(10),uid varchar(10))
