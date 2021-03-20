@@ -88,7 +88,7 @@ public class WindowWordCountByWaterMark {
         @Nullable
         @Override
         public Watermark getCurrentWatermark() {
-            System.out.println("water maker:......"+System.currentTimeMillis());
+            //System.out.println("water maker:......"+System.currentTimeMillis());
             return new Watermark(System.currentTimeMillis() - 5000);
         }
 
@@ -113,12 +113,12 @@ public class WindowWordCountByWaterMark {
         public void process(Tuple tuple, Context context,
                             Iterable<Tuple2<String, Long>> allElements,
                             Collector<Tuple2<String, Integer>> out) {
-//            System.out.println("当前系统时间："+dataformat.format(System.currentTimeMillis()));
-//            System.out.println("窗口处理时间："+dataformat.format(context.currentProcessingTime()));
-//            System.out.println("窗口开始时间："+dataformat.format(context.window().getStart()));
-//            System.out.println("窗口结束时间："+dataformat.format(context.window().getEnd()));
-//
-//            System.out.println("=====================================================");
+            System.out.println("当前系统时间："+dataformat.format(System.currentTimeMillis()));
+            System.out.println("窗口处理时间："+dataformat.format(context.currentProcessingTime()));
+            System.out.println("窗口开始时间："+dataformat.format(context.window().getStart()));
+            System.out.println("窗口结束时间："+dataformat.format(context.window().getEnd()));
+
+            System.out.println("=====================================================");
 
             int count=0;
            for (Tuple2<String,Long> e:allElements){
