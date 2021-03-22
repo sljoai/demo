@@ -1,3 +1,7 @@
+```20210322```
+* 添加 Flink 相关小项目: 热门商品、异常登陆检测、网路流量统计
+* 添加 Flink CEP 相关Demo: 恶意登陆
+
 ```20210320```
 * 添加 Flink Window 和 Trigger 相关的 Demo
 
