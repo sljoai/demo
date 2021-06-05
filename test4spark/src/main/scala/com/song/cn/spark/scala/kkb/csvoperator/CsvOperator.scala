@@ -1,5 +1,8 @@
 package com.song.cn.spark.scala.kkb.csvoperator
 
+import org.apache.spark.SparkConf
+import org.apache.spark.sql.{DataFrame, SaveMode, SparkSession}
+
 import java.util.Properties
 
 /**
@@ -17,8 +20,8 @@ object CsvOperator {
       .format("csv")
       .option("timestampFormat", "yyyy/MM/dd HH:mm:ss ZZ")
       .option("header", "true")
-      .option("delimiter","@")
-      .option("multiLine","true")
+      .option("delimiter", "@")
+      .option("multiLine", "true")
       .option("ignoreLeadingWhiteSpace", true)
       .option("multiLine", true)
       .load("file:////Users/sljoai/Downloads/资料文件夹/爬取数据集/csv文件/zhipin_position_20210205.csv")
