@@ -22,6 +22,11 @@
     </build>
     <dependencies>
         <dependency>
+            <groupId>org.apache.hive</groupId>
+            <artifactId>hive-exec</artifactId>
+            <version>1.2.1</version>
+        </dependency>
+        <dependency>
             <groupId>com.github.jsqlparser</groupId>
             <artifactId>jsqlparser</artifactId>
             <version>1.2</version>
@@ -30,6 +35,12 @@
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-client</artifactId>
             <version>2.6.4</version>
+        </dependency>
+        <dependency>
+            <groupId>test</groupId>
+            <artifactId>test</artifactId>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/../lib/NFZXDataOperation.jar</systemPath>
         </dependency>
     </dependencies>
 
