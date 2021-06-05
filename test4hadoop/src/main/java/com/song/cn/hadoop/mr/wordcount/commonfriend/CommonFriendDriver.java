@@ -7,9 +7,20 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
+import org.apache.hadoop.mapreduce.lib.output.LazyOutputFormat;
+import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
 /**
  * 计算共同好友-Driver端
+ * 1. 将jar包上传服务器之后，需要对jar进行特殊处理
+ * zip -d test4hadoop.jar 'META-INF/.SF' 'META-INF/.RSA' 'META-INF/*SF'
+ * 另外，针对基于pom.xml文件使用mvn进行打包的过程，可以添加shade插件，在打包的时候排除.SF等文件
+ * 2. 提交任务
+ * hadoop jar test4hadoop.jar com.song.cn.hadoop.mr.wordcount.commonfriend.CommonFriendDriver \
+ * /data/test/input/common_friend.txt \
+ * /data/test/output
+ * 3. 查看结果
+ * hadoop fs -cat /data/test/output/part-r-00000
  */
 public class CommonFriendDriver {
     public static void main(String[] args) throws Exception {
@@ -34,6 +45,9 @@ public class CommonFriendDriver {
 
         // 6 指定本程序的 jar包所在的本地路径
         job.setJarByClass(CommonFriendDriver.class);
+
+        // 取消类似part-r-00000的空文件
+        LazyOutputFormat.setOutputFormatClass(job, TextOutputFormat.class);
 
         // 2 指定本业务 job 要使用的mapper/reducer 业务类
         job.setMapperClass(CommonFriendMapper.class);
