@@ -36,12 +36,12 @@
             <artifactId>hadoop-client</artifactId>
             <version>2.6.4</version>
         </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>test</groupId>
             <artifactId>test</artifactId>
             <scope>system</scope>
             <systemPath>${pom.basedir}/../lib/NFZXDataOperation.jar</systemPath>
-        </dependency>
+        </dependency>-->
     </dependencies>
 
 
