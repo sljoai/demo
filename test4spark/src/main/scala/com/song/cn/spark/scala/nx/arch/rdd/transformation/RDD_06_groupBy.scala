@@ -14,7 +14,7 @@ object RDD_06_groupBy {
 
     // 初始化编程入口
     val sparkConf = new SparkConf()
-    sparkConf.setMaster("local")
+    sparkConf.setMaster("local[1]")
     sparkConf.setAppName("RDD_Test")
     val sc = new SparkContext(sparkConf)
 
@@ -48,13 +48,12 @@ object RDD_06_groupBy {
 
     //        val rdd3 = sc.parallelize(1 to 9, 3)
     //        val rdd4 = rdd3.groupBy(x => x, partitioner)
-
-    val rdd3 = sc.parallelize(List(("a", 11), ("b", 22), ("a", 33)), 3)
-    val rdd4 = rdd3.groupBy(x => x._1, partitioner)
+    val rdd3: RDD[(String, Int)] = sc.parallelize(List(("a", 11), ("b", 22), ("a", 33)), 3)
+    val rdd4 = rdd3.groupBy((tx:Tuple2[String,Int]) => tx._1, partitioner)
 
     rdd4.foreachPartition(x => {
       for (y <- x) {
-        print(y)
+        print(y._2.mkString(","))
       }
       println()
     })
