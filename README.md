@@ -1,3 +1,6 @@
+```20210618```
+* 添加Scala编程相关的Demo
+
 ``20210608``
 * 添加 Flink的Demo: 基于Kafka的端到端Exactly Once语义
 
