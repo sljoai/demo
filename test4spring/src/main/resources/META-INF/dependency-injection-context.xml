@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!-- 复用lookup的bean -->
+    <import resource="dependency-lookup-context.xml"/>
+
+    <bean name="userRepository" class="com.song.cn.agent.spring.ioc.repository.UserRepository"
+          autowire="byType"> <!--自动注入-->
+
+        <!-- 手动配置 -->
+        <!--        <property name="users">
+                    <util:list>
+                        <ref bean="user" />
+                        <ref bean="superUser" />
+                    </util:list>
+                </property>-->
+    </bean>
+
+</beans>

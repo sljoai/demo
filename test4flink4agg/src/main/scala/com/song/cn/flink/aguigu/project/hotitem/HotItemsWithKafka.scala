@@ -32,7 +32,7 @@ object HotItemsWithKafka {
       // 分流
       .filter(_.behavior == "pv")
       // TODO：注意：如果此处按照"_.itermId"填写的时，则需要aggregate中WindowFunction的第三个泛型(K)保持与Window Key一致
-      .keyBy(_.itermId)
+      .keyBy(_.itemId)
       .timeWindow(Time.hours(1), Time.minutes(5))
       // 获取每个商品在每个窗口的点击量的数据流
       .aggregate(new CountAgg(), new WindowResultFunction())
